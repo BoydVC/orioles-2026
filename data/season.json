@@ -1,0 +1,10111 @@
+{
+ "meta": {
+  "fetched_at": "2026-10-07T17:25:59-04:00",
+  "built_at": "2026-10-10T13:36:19-04:00",
+  "sources": [
+   {
+    "name": "MLB Stats API: schedule + linescores (team 110 and AL East rivals)",
+    "url": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&teamId=110&season=2026&gameType=R&hydrate=linescore"
+   },
+   {
+    "name": "MLB Stats API: AL standings",
+    "url": "https://statsapi.mlb.com/api/v1/standings?leagueId=103&season=2026&standingsTypes=regularSeason"
+   },
+   {
+    "name": "MLB Stats API: Orioles player season stats",
+    "url": "https://statsapi.mlb.com/api/v1/stats?stats=season&group=hitting&teamId=110&season=2026&playerPool=ALL"
+   },
+   {
+    "name": "MLB Stats API: team season stats",
+    "url": "https://statsapi.mlb.com/api/v1/teams/110/stats?season=2026&group=hitting,pitching&stats=season"
+   },
+   {
+    "name": "MLB Stats API: 2026 postseason schedule",
+    "url": "https://statsapi.mlb.com/api/v1/schedule/postseason?season=2026&sportId=1"
+   }
+  ]
+ },
+ "record": {
+  "w": 79,
+  "l": 82,
+  "rs": 718,
+  "ra": 739,
+  "rd": -21,
+  "g": 161,
+  "pct": ".491",
+  "pyth_w": 78,
+  "pyth_l": 83,
+  "al_rank": 8,
+  "div_rank": 4,
+  "gb": "18.5",
+  "wc_gb": "4.5"
+ },
+ "official": {
+  "w": 79,
+  "l": 82,
+  "rs": 718,
+  "ra": 739
+ },
+ "postseason": {
+  "bal_in_postseason": false,
+  "bal_games": 0,
+  "games_final": 19,
+  "games_live": 1,
+  "current_round": "AL Division Series",
+  "ws_complete": false
+ },
+ "postseason_teams_al": [
+  "TB",
+  "NYY",
+  "BOS",
+  "CLE",
+  "CWS",
+  "HOU"
+ ],
+ "not_played": [
+  {
+   "date": "2026-04-30",
+   "home": true,
+   "state": "Postponed",
+   "reason": "Rain",
+   "pk": 824850,
+   "opp": "HOU"
+  },
+  {
+   "date": "2026-05-24",
+   "home": true,
+   "state": "Postponed",
+   "reason": "Rain",
+   "pk": 824840,
+   "opp": "DET"
+  },
+  {
+   "date": "2026-07-22",
+   "home": false,
+   "state": "Postponed",
+   "reason": "Rain",
+   "pk": 824735,
+   "opp": "BOS"
+  },
+  {
+   "date": "2026-09-23",
+   "home": true,
+   "state": "Postponed",
+   "reason": "Rain",
+   "pk": 824785,
+   "opp": "TOR"
+  },
+  {
+   "date": "2026-09-27",
+   "home": false,
+   "state": "Cancelled",
+   "reason": "Rain",
+   "pk": 823490,
+   "opp": "NYY"
+  }
+ ],
+ "log": [
+  {
+   "n": 1,
+   "pk": 824865,
+   "date": "2026-03-26",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "MIN",
+   "opp_id": 142,
+   "opp_name": "Minnesota Twins",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 2,
+   "ra": 1,
+   "res": "W",
+   "w": 1,
+   "l": 0,
+   "rd": 1,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 2,
+   "pk": 824862,
+   "date": "2026-03-28",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "MIN",
+   "opp_id": 142,
+   "opp_name": "Minnesota Twins",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 1,
+   "ra": 4,
+   "res": "L",
+   "w": 1,
+   "l": 1,
+   "rd": -2,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 3,
+   "pk": 824864,
+   "date": "2026-03-29",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "MIN",
+   "opp_id": 142,
+   "opp_name": "Minnesota Twins",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 8,
+   "ra": 6,
+   "res": "W",
+   "w": 2,
+   "l": 1,
+   "rd": 0,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 4,
+   "pk": 824863,
+   "date": "2026-03-30",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "TEX",
+   "opp_id": 140,
+   "opp_name": "Texas Rangers",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 2,
+   "ra": 5,
+   "res": "L",
+   "w": 2,
+   "l": 2,
+   "rd": -3,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 5,
+   "pk": 824861,
+   "date": "2026-03-31",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "TEX",
+   "opp_id": 140,
+   "opp_name": "Texas Rangers",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 5,
+   "ra": 8,
+   "res": "L",
+   "w": 2,
+   "l": 3,
+   "rd": -6,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 6,
+   "pk": 824860,
+   "date": "2026-04-01",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "TEX",
+   "opp_id": 140,
+   "opp_name": "Texas Rangers",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 8,
+   "ra": 3,
+   "res": "W",
+   "w": 3,
+   "l": 3,
+   "rd": -1,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 7,
+   "pk": 823406,
+   "date": "2026-04-03",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "PIT",
+   "opp_id": 134,
+   "opp_name": "Pittsburgh Pirates",
+   "venue": "PNC Park",
+   "rs": 4,
+   "ra": 5,
+   "res": "L",
+   "w": 3,
+   "l": 4,
+   "rd": -2,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 8,
+   "pk": 823404,
+   "date": "2026-04-04",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "PIT",
+   "opp_id": 134,
+   "opp_name": "Pittsburgh Pirates",
+   "venue": "PNC Park",
+   "rs": 2,
+   "ra": 3,
+   "res": "L",
+   "w": 3,
+   "l": 5,
+   "rd": -3,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 9,
+   "pk": 823405,
+   "date": "2026-04-05",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "PIT",
+   "opp_id": 134,
+   "opp_name": "Pittsburgh Pirates",
+   "venue": "PNC Park",
+   "rs": 2,
+   "ra": 8,
+   "res": "L",
+   "w": 3,
+   "l": 6,
+   "rd": -9,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 10,
+   "pk": 824619,
+   "date": "2026-04-06",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "CWS",
+   "opp_id": 145,
+   "opp_name": "Chicago White Sox",
+   "venue": "Rate Field",
+   "rs": 2,
+   "ra": 1,
+   "res": "W",
+   "w": 4,
+   "l": 6,
+   "rd": -8,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 11,
+   "pk": 824618,
+   "date": "2026-04-07",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "CWS",
+   "opp_id": 145,
+   "opp_name": "Chicago White Sox",
+   "venue": "Rate Field",
+   "rs": 4,
+   "ra": 2,
+   "res": "W",
+   "w": 5,
+   "l": 6,
+   "rd": -6,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 12,
+   "pk": 824617,
+   "date": "2026-04-08",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "CWS",
+   "opp_id": 145,
+   "opp_name": "Chicago White Sox",
+   "venue": "Rate Field",
+   "rs": 5,
+   "ra": 3,
+   "res": "W",
+   "w": 6,
+   "l": 6,
+   "rd": -4,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 13,
+   "pk": 824858,
+   "date": "2026-04-10",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "SF",
+   "opp_id": 137,
+   "opp_name": "San Francisco Giants",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 3,
+   "ra": 6,
+   "res": "L",
+   "w": 6,
+   "l": 7,
+   "rd": -7,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 14,
+   "pk": 824857,
+   "date": "2026-04-11",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "SF",
+   "opp_id": 137,
+   "opp_name": "San Francisco Giants",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 6,
+   "ra": 2,
+   "res": "W",
+   "w": 7,
+   "l": 7,
+   "rd": -3,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 15,
+   "pk": 824859,
+   "date": "2026-04-12",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "SF",
+   "opp_id": 137,
+   "opp_name": "San Francisco Giants",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 6,
+   "ra": 2,
+   "res": "W",
+   "w": 8,
+   "l": 7,
+   "rd": 1,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 16,
+   "pk": 824856,
+   "date": "2026-04-13",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "AZ",
+   "opp_id": 109,
+   "opp_name": "Arizona Diamondbacks",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 9,
+   "ra": 7,
+   "res": "W",
+   "w": 9,
+   "l": 7,
+   "rd": 3,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 17,
+   "pk": 824853,
+   "date": "2026-04-14",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "AZ",
+   "opp_id": 109,
+   "opp_name": "Arizona Diamondbacks",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 3,
+   "ra": 4,
+   "res": "L",
+   "w": 9,
+   "l": 8,
+   "rd": 2,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 18,
+   "pk": 824855,
+   "date": "2026-04-15",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "AZ",
+   "opp_id": 109,
+   "opp_name": "Arizona Diamondbacks",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 5,
+   "ra": 8,
+   "res": "L",
+   "w": 9,
+   "l": 9,
+   "rd": -1,
+   "innings": 10,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 19,
+   "pk": 824453,
+   "date": "2026-04-16",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "CLE",
+   "opp_id": 114,
+   "opp_name": "Cleveland Guardians",
+   "venue": "Progressive Field",
+   "rs": 2,
+   "ra": 4,
+   "res": "L",
+   "w": 9,
+   "l": 10,
+   "rd": -3,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 20,
+   "pk": 824454,
+   "date": "2026-04-17",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "CLE",
+   "opp_id": 114,
+   "opp_name": "Cleveland Guardians",
+   "venue": "Progressive Field",
+   "rs": 6,
+   "ra": 4,
+   "res": "W",
+   "w": 10,
+   "l": 10,
+   "rd": -1,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 21,
+   "pk": 824451,
+   "date": "2026-04-18",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "CLE",
+   "opp_id": 114,
+   "opp_name": "Cleveland Guardians",
+   "venue": "Progressive Field",
+   "rs": 2,
+   "ra": 4,
+   "res": "L",
+   "w": 10,
+   "l": 11,
+   "rd": -3,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 22,
+   "pk": 824452,
+   "date": "2026-04-19",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "CLE",
+   "opp_id": 114,
+   "opp_name": "Cleveland Guardians",
+   "venue": "Progressive Field",
+   "rs": 4,
+   "ra": 8,
+   "res": "L",
+   "w": 10,
+   "l": 12,
+   "rd": -7,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 23,
+   "pk": 824125,
+   "date": "2026-04-20",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "KC",
+   "opp_id": 118,
+   "opp_name": "Kansas City Royals",
+   "venue": "Kauffman Stadium",
+   "rs": 7,
+   "ra": 5,
+   "res": "W",
+   "w": 11,
+   "l": 12,
+   "rd": -5,
+   "innings": 12,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 24,
+   "pk": 824127,
+   "date": "2026-04-21",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "KC",
+   "opp_id": 118,
+   "opp_name": "Kansas City Royals",
+   "venue": "Kauffman Stadium",
+   "rs": 5,
+   "ra": 6,
+   "res": "L",
+   "w": 11,
+   "l": 13,
+   "rd": -6,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 25,
+   "pk": 824123,
+   "date": "2026-04-22",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "KC",
+   "opp_id": 118,
+   "opp_name": "Kansas City Royals",
+   "venue": "Kauffman Stadium",
+   "rs": 8,
+   "ra": 6,
+   "res": "W",
+   "w": 12,
+   "l": 13,
+   "rd": -4,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 26,
+   "pk": 824854,
+   "date": "2026-04-24",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "BOS",
+   "opp_id": 111,
+   "opp_name": "Boston Red Sox",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 10,
+   "ra": 3,
+   "res": "W",
+   "w": 13,
+   "l": 13,
+   "rd": 3,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 27,
+   "pk": 824851,
+   "date": "2026-04-25",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "BOS",
+   "opp_id": 111,
+   "opp_name": "Boston Red Sox",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 1,
+   "ra": 17,
+   "res": "L",
+   "w": 13,
+   "l": 14,
+   "rd": -13,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 28,
+   "pk": 824852,
+   "date": "2026-04-26",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "BOS",
+   "opp_id": 111,
+   "opp_name": "Boston Red Sox",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 3,
+   "ra": 5,
+   "res": "L",
+   "w": 13,
+   "l": 15,
+   "rd": -15,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 29,
+   "pk": 824849,
+   "date": "2026-04-28",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "HOU",
+   "opp_id": 117,
+   "opp_name": "Houston Astros",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 5,
+   "ra": 3,
+   "res": "W",
+   "w": 14,
+   "l": 15,
+   "rd": -13,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 30,
+   "pk": 824848,
+   "date": "2026-04-30",
+   "dh": true,
+   "gnum": 1,
+   "home": true,
+   "opp": "HOU",
+   "opp_id": 117,
+   "opp_name": "Houston Astros",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 10,
+   "ra": 3,
+   "res": "W",
+   "w": 15,
+   "l": 15,
+   "rd": -6,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 31,
+   "pk": 824850,
+   "date": "2026-04-30",
+   "dh": true,
+   "gnum": 2,
+   "home": true,
+   "opp": "HOU",
+   "opp_id": 117,
+   "opp_name": "Houston Astros",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 5,
+   "ra": 11,
+   "res": "L",
+   "w": 15,
+   "l": 16,
+   "rd": -12,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 32,
+   "pk": 823557,
+   "date": "2026-05-01",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "NYY",
+   "opp_id": 147,
+   "opp_name": "New York Yankees",
+   "venue": "Yankee Stadium",
+   "rs": 2,
+   "ra": 7,
+   "res": "L",
+   "w": 15,
+   "l": 17,
+   "rd": -17,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 33,
+   "pk": 823554,
+   "date": "2026-05-02",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "NYY",
+   "opp_id": 147,
+   "opp_name": "New York Yankees",
+   "venue": "Yankee Stadium",
+   "rs": 4,
+   "ra": 9,
+   "res": "L",
+   "w": 15,
+   "l": 18,
+   "rd": -22,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 34,
+   "pk": 823555,
+   "date": "2026-05-03",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "NYY",
+   "opp_id": 147,
+   "opp_name": "New York Yankees",
+   "venue": "Yankee Stadium",
+   "rs": 3,
+   "ra": 11,
+   "res": "L",
+   "w": 15,
+   "l": 19,
+   "rd": -30,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 35,
+   "pk": 823552,
+   "date": "2026-05-04",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "NYY",
+   "opp_id": 147,
+   "opp_name": "New York Yankees",
+   "venue": "Yankee Stadium",
+   "rs": 1,
+   "ra": 12,
+   "res": "L",
+   "w": 15,
+   "l": 20,
+   "rd": -41,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 36,
+   "pk": 823873,
+   "date": "2026-05-05",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "MIA",
+   "opp_id": 146,
+   "opp_name": "Miami Marlins",
+   "venue": "loanDepot park",
+   "rs": 9,
+   "ra": 7,
+   "res": "W",
+   "w": 16,
+   "l": 20,
+   "rd": -39,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 37,
+   "pk": 823872,
+   "date": "2026-05-06",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "MIA",
+   "opp_id": 146,
+   "opp_name": "Miami Marlins",
+   "venue": "loanDepot park",
+   "rs": 7,
+   "ra": 4,
+   "res": "W",
+   "w": 17,
+   "l": 20,
+   "rd": -36,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 38,
+   "pk": 823870,
+   "date": "2026-05-07",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "MIA",
+   "opp_id": 146,
+   "opp_name": "Miami Marlins",
+   "venue": "loanDepot park",
+   "rs": 3,
+   "ra": 4,
+   "res": "L",
+   "w": 17,
+   "l": 21,
+   "rd": -37,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 39,
+   "pk": 824846,
+   "date": "2026-05-08",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "ATH",
+   "opp_id": 133,
+   "opp_name": "Athletics",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 3,
+   "ra": 4,
+   "res": "L",
+   "w": 17,
+   "l": 22,
+   "rd": -38,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 40,
+   "pk": 824847,
+   "date": "2026-05-09",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "ATH",
+   "opp_id": 133,
+   "opp_name": "Athletics",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 2,
+   "ra": 6,
+   "res": "L",
+   "w": 17,
+   "l": 23,
+   "rd": -42,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 41,
+   "pk": 824845,
+   "date": "2026-05-10",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "ATH",
+   "opp_id": 133,
+   "opp_name": "Athletics",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 2,
+   "ra": 1,
+   "res": "W",
+   "w": 18,
+   "l": 23,
+   "rd": -41,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 42,
+   "pk": 824844,
+   "date": "2026-05-11",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "NYY",
+   "opp_id": 147,
+   "opp_name": "New York Yankees",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 3,
+   "ra": 2,
+   "res": "W",
+   "w": 19,
+   "l": 23,
+   "rd": -40,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 43,
+   "pk": 824843,
+   "date": "2026-05-12",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "NYY",
+   "opp_id": 147,
+   "opp_name": "New York Yankees",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 2,
+   "ra": 6,
+   "res": "L",
+   "w": 19,
+   "l": 24,
+   "rd": -44,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 44,
+   "pk": 824841,
+   "date": "2026-05-13",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "NYY",
+   "opp_id": 147,
+   "opp_name": "New York Yankees",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 7,
+   "ra": 0,
+   "res": "W",
+   "w": 20,
+   "l": 24,
+   "rd": -37,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 45,
+   "pk": 822739,
+   "date": "2026-05-15",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "WSH",
+   "opp_id": 120,
+   "opp_name": "Washington Nationals",
+   "venue": "Nationals Park",
+   "rs": 2,
+   "ra": 3,
+   "res": "L",
+   "w": 20,
+   "l": 25,
+   "rd": -38,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 46,
+   "pk": 822737,
+   "date": "2026-05-16",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "WSH",
+   "opp_id": 120,
+   "opp_name": "Washington Nationals",
+   "venue": "Nationals Park",
+   "rs": 3,
+   "ra": 13,
+   "res": "L",
+   "w": 20,
+   "l": 26,
+   "rd": -48,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 47,
+   "pk": 822738,
+   "date": "2026-05-17",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "WSH",
+   "opp_id": 120,
+   "opp_name": "Washington Nationals",
+   "venue": "Nationals Park",
+   "rs": 7,
+   "ra": 3,
+   "res": "W",
+   "w": 21,
+   "l": 26,
+   "rd": -44,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 48,
+   "pk": 822980,
+   "date": "2026-05-18",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "TB",
+   "opp_id": 139,
+   "opp_name": "Tampa Bay Rays",
+   "venue": "Tropicana Field",
+   "rs": 6,
+   "ra": 16,
+   "res": "L",
+   "w": 21,
+   "l": 27,
+   "rd": -54,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 49,
+   "pk": 822979,
+   "date": "2026-05-19",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "TB",
+   "opp_id": 139,
+   "opp_name": "Tampa Bay Rays",
+   "venue": "Tropicana Field",
+   "rs": 1,
+   "ra": 4,
+   "res": "L",
+   "w": 21,
+   "l": 28,
+   "rd": -57,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 50,
+   "pk": 822977,
+   "date": "2026-05-20",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "TB",
+   "opp_id": 139,
+   "opp_name": "Tampa Bay Rays",
+   "venue": "Tropicana Field",
+   "rs": 3,
+   "ra": 5,
+   "res": "L",
+   "w": 21,
+   "l": 29,
+   "rd": -59,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 51,
+   "pk": 824842,
+   "date": "2026-05-22",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "DET",
+   "opp_id": 116,
+   "opp_name": "Detroit Tigers",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 7,
+   "ra": 4,
+   "res": "W",
+   "w": 22,
+   "l": 29,
+   "rd": -56,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 52,
+   "pk": 824839,
+   "date": "2026-05-24",
+   "dh": true,
+   "gnum": 1,
+   "home": true,
+   "opp": "DET",
+   "opp_id": 116,
+   "opp_name": "Detroit Tigers",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 5,
+   "ra": 3,
+   "res": "W",
+   "w": 23,
+   "l": 29,
+   "rd": -54,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": true,
+   "day_night": "day"
+  },
+  {
+   "n": 53,
+   "pk": 824840,
+   "date": "2026-05-24",
+   "dh": true,
+   "gnum": 2,
+   "home": true,
+   "opp": "DET",
+   "opp_id": 116,
+   "opp_name": "Detroit Tigers",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 1,
+   "ra": 4,
+   "res": "L",
+   "w": 23,
+   "l": 30,
+   "rd": -57,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 54,
+   "pk": 824838,
+   "date": "2026-05-25",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "TB",
+   "opp_id": 139,
+   "opp_name": "Tampa Bay Rays",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 9,
+   "ra": 7,
+   "res": "W",
+   "w": 24,
+   "l": 30,
+   "rd": -55,
+   "innings": 13,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": true,
+   "day_night": "day"
+  },
+  {
+   "n": 55,
+   "pk": 824837,
+   "date": "2026-05-26",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "TB",
+   "opp_id": 139,
+   "opp_name": "Tampa Bay Rays",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 6,
+   "ra": 1,
+   "res": "W",
+   "w": 25,
+   "l": 30,
+   "rd": -50,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 56,
+   "pk": 824836,
+   "date": "2026-05-27",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "TB",
+   "opp_id": 139,
+   "opp_name": "Tampa Bay Rays",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 11,
+   "ra": 2,
+   "res": "W",
+   "w": 26,
+   "l": 30,
+   "rd": -41,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 57,
+   "pk": 824834,
+   "date": "2026-05-28",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "TOR",
+   "opp_id": 141,
+   "opp_name": "Toronto Blue Jays",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 1,
+   "ra": 2,
+   "res": "L",
+   "w": 26,
+   "l": 31,
+   "rd": -42,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 58,
+   "pk": 824835,
+   "date": "2026-05-29",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "TOR",
+   "opp_id": 141,
+   "opp_name": "Toronto Blue Jays",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 5,
+   "ra": 6,
+   "res": "L",
+   "w": 26,
+   "l": 32,
+   "rd": -43,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 59,
+   "pk": 824833,
+   "date": "2026-05-30",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "TOR",
+   "opp_id": 141,
+   "opp_name": "Toronto Blue Jays",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 6,
+   "ra": 5,
+   "res": "W",
+   "w": 27,
+   "l": 32,
+   "rd": -42,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": true,
+   "day_night": "day"
+  },
+  {
+   "n": 60,
+   "pk": 824832,
+   "date": "2026-05-31",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "TOR",
+   "opp_id": 141,
+   "opp_name": "Toronto Blue Jays",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 9,
+   "ra": 5,
+   "res": "W",
+   "w": 28,
+   "l": 32,
+   "rd": -38,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 61,
+   "pk": 824754,
+   "date": "2026-06-02",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "BOS",
+   "opp_id": 111,
+   "opp_name": "Boston Red Sox",
+   "venue": "Fenway Park",
+   "rs": 4,
+   "ra": 2,
+   "res": "W",
+   "w": 29,
+   "l": 32,
+   "rd": -36,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 62,
+   "pk": 824755,
+   "date": "2026-06-03",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "BOS",
+   "opp_id": 111,
+   "opp_name": "Boston Red Sox",
+   "venue": "Fenway Park",
+   "rs": 1,
+   "ra": 8,
+   "res": "L",
+   "w": 29,
+   "l": 33,
+   "rd": -43,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 63,
+   "pk": 824753,
+   "date": "2026-06-04",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "BOS",
+   "opp_id": 111,
+   "opp_name": "Boston Red Sox",
+   "venue": "Fenway Park",
+   "rs": 8,
+   "ra": 2,
+   "res": "W",
+   "w": 30,
+   "l": 33,
+   "rd": -37,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 64,
+   "pk": 822810,
+   "date": "2026-06-05",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "TOR",
+   "opp_id": 141,
+   "opp_name": "Toronto Blue Jays",
+   "venue": "Rogers Centre",
+   "rs": 13,
+   "ra": 3,
+   "res": "W",
+   "w": 31,
+   "l": 33,
+   "rd": -27,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 65,
+   "pk": 822808,
+   "date": "2026-06-06",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "TOR",
+   "opp_id": 141,
+   "opp_name": "Toronto Blue Jays",
+   "venue": "Rogers Centre",
+   "rs": 4,
+   "ra": 6,
+   "res": "L",
+   "w": 31,
+   "l": 34,
+   "rd": -29,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 66,
+   "pk": 822807,
+   "date": "2026-06-07",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "TOR",
+   "opp_id": 141,
+   "opp_name": "Toronto Blue Jays",
+   "venue": "Rogers Centre",
+   "rs": 4,
+   "ra": 6,
+   "res": "L",
+   "w": 31,
+   "l": 35,
+   "rd": -31,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 67,
+   "pk": 824829,
+   "date": "2026-06-08",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "SEA",
+   "opp_id": 136,
+   "opp_name": "Seattle Mariners",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 3,
+   "ra": 6,
+   "res": "L",
+   "w": 31,
+   "l": 36,
+   "rd": -34,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 68,
+   "pk": 824830,
+   "date": "2026-06-09",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "SEA",
+   "opp_id": 136,
+   "opp_name": "Seattle Mariners",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 5,
+   "ra": 6,
+   "res": "L",
+   "w": 31,
+   "l": 37,
+   "rd": -35,
+   "innings": 10,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 69,
+   "pk": 824831,
+   "date": "2026-06-10",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "SEA",
+   "opp_id": 136,
+   "opp_name": "Seattle Mariners",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 7,
+   "ra": 2,
+   "res": "W",
+   "w": 32,
+   "l": 37,
+   "rd": -30,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 70,
+   "pk": 824827,
+   "date": "2026-06-11",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "SEA",
+   "opp_id": 136,
+   "opp_name": "Seattle Mariners",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 7,
+   "ra": 5,
+   "res": "W",
+   "w": 33,
+   "l": 37,
+   "rd": -28,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 71,
+   "pk": 824826,
+   "date": "2026-06-12",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "SD",
+   "opp_id": 135,
+   "opp_name": "San Diego Padres",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 7,
+   "ra": 3,
+   "res": "W",
+   "w": 34,
+   "l": 37,
+   "rd": -24,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 72,
+   "pk": 824828,
+   "date": "2026-06-13",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "SD",
+   "opp_id": 135,
+   "opp_name": "San Diego Padres",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 3,
+   "ra": 9,
+   "res": "L",
+   "w": 34,
+   "l": 38,
+   "rd": -30,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 73,
+   "pk": 824823,
+   "date": "2026-06-14",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "SD",
+   "opp_id": 135,
+   "opp_name": "San Diego Padres",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 2,
+   "ra": 5,
+   "res": "L",
+   "w": 34,
+   "l": 39,
+   "rd": -33,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 74,
+   "pk": 823128,
+   "date": "2026-06-16",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "SEA",
+   "opp_id": 136,
+   "opp_name": "Seattle Mariners",
+   "venue": "T-Mobile Park",
+   "rs": 1,
+   "ra": 3,
+   "res": "L",
+   "w": 34,
+   "l": 40,
+   "rd": -35,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 75,
+   "pk": 823127,
+   "date": "2026-06-17",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "SEA",
+   "opp_id": 136,
+   "opp_name": "Seattle Mariners",
+   "venue": "T-Mobile Park",
+   "rs": 5,
+   "ra": 3,
+   "res": "W",
+   "w": 35,
+   "l": 40,
+   "rd": -33,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 76,
+   "pk": 823125,
+   "date": "2026-06-18",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "SEA",
+   "opp_id": 136,
+   "opp_name": "Seattle Mariners",
+   "venue": "T-Mobile Park",
+   "rs": 0,
+   "ra": 3,
+   "res": "L",
+   "w": 35,
+   "l": 41,
+   "rd": -36,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 77,
+   "pk": 823936,
+   "date": "2026-06-19",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "LAD",
+   "opp_id": 119,
+   "opp_name": "Los Angeles Dodgers",
+   "venue": "UNIQLO Field at Dodger Stadium",
+   "rs": 5,
+   "ra": 6,
+   "res": "L",
+   "w": 35,
+   "l": 42,
+   "rd": -37,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 78,
+   "pk": 823937,
+   "date": "2026-06-20",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "LAD",
+   "opp_id": 119,
+   "opp_name": "Los Angeles Dodgers",
+   "venue": "UNIQLO Field at Dodger Stadium",
+   "rs": 3,
+   "ra": 2,
+   "res": "W",
+   "w": 36,
+   "l": 42,
+   "rd": -36,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 79,
+   "pk": 823934,
+   "date": "2026-06-21",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "LAD",
+   "opp_id": 119,
+   "opp_name": "Los Angeles Dodgers",
+   "venue": "UNIQLO Field at Dodger Stadium",
+   "rs": 12,
+   "ra": 1,
+   "res": "W",
+   "w": 37,
+   "l": 42,
+   "rd": -25,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 80,
+   "pk": 824016,
+   "date": "2026-06-22",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "LAA",
+   "opp_id": 108,
+   "opp_name": "Los Angeles Angels",
+   "venue": "Angel Stadium",
+   "rs": 6,
+   "ra": 1,
+   "res": "W",
+   "w": 38,
+   "l": 42,
+   "rd": -20,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 81,
+   "pk": 824017,
+   "date": "2026-06-23",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "LAA",
+   "opp_id": 108,
+   "opp_name": "Los Angeles Angels",
+   "venue": "Angel Stadium",
+   "rs": 1,
+   "ra": 5,
+   "res": "L",
+   "w": 38,
+   "l": 43,
+   "rd": -24,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 82,
+   "pk": 824018,
+   "date": "2026-06-24",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "LAA",
+   "opp_id": 108,
+   "opp_name": "Los Angeles Angels",
+   "venue": "Angel Stadium",
+   "rs": 6,
+   "ra": 7,
+   "res": "L",
+   "w": 38,
+   "l": 44,
+   "rd": -25,
+   "innings": 10,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 83,
+   "pk": 824824,
+   "date": "2026-06-26",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "WSH",
+   "opp_id": 120,
+   "opp_name": "Washington Nationals",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 3,
+   "ra": 1,
+   "res": "W",
+   "w": 39,
+   "l": 44,
+   "rd": -23,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 84,
+   "pk": 824825,
+   "date": "2026-06-27",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "WSH",
+   "opp_id": 120,
+   "opp_name": "Washington Nationals",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 3,
+   "ra": 4,
+   "res": "L",
+   "w": 39,
+   "l": 45,
+   "rd": -24,
+   "innings": 10,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 85,
+   "pk": 824821,
+   "date": "2026-06-28",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "WSH",
+   "opp_id": 120,
+   "opp_name": "Washington Nationals",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 4,
+   "ra": 6,
+   "res": "L",
+   "w": 39,
+   "l": 46,
+   "rd": -26,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 86,
+   "pk": 824822,
+   "date": "2026-06-29",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "CWS",
+   "opp_id": 145,
+   "opp_name": "Chicago White Sox",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 2,
+   "ra": 8,
+   "res": "L",
+   "w": 39,
+   "l": 47,
+   "rd": -32,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 87,
+   "pk": 824819,
+   "date": "2026-06-30",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "CWS",
+   "opp_id": 145,
+   "opp_name": "Chicago White Sox",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 3,
+   "ra": 9,
+   "res": "L",
+   "w": 39,
+   "l": 48,
+   "rd": -38,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 88,
+   "pk": 824818,
+   "date": "2026-07-01",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "CWS",
+   "opp_id": 145,
+   "opp_name": "Chicago White Sox",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 6,
+   "ra": 1,
+   "res": "W",
+   "w": 40,
+   "l": 48,
+   "rd": -33,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 89,
+   "pk": 824498,
+   "date": "2026-07-03",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "CIN",
+   "opp_id": 113,
+   "opp_name": "Cincinnati Reds",
+   "venue": "Great American Ball Park",
+   "rs": 3,
+   "ra": 0,
+   "res": "W",
+   "w": 41,
+   "l": 48,
+   "rd": -30,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 90,
+   "pk": 824499,
+   "date": "2026-07-04",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "CIN",
+   "opp_id": 113,
+   "opp_name": "Cincinnati Reds",
+   "venue": "Great American Ball Park",
+   "rs": 8,
+   "ra": 5,
+   "res": "W",
+   "w": 42,
+   "l": 48,
+   "rd": -27,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 91,
+   "pk": 824497,
+   "date": "2026-07-05",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "CIN",
+   "opp_id": 113,
+   "opp_name": "Cincinnati Reds",
+   "venue": "Great American Ball Park",
+   "rs": 2,
+   "ra": 3,
+   "res": "L",
+   "w": 42,
+   "l": 49,
+   "rd": -28,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 92,
+   "pk": 824820,
+   "date": "2026-07-07",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "CHC",
+   "opp_id": 112,
+   "opp_name": "Chicago Cubs",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 2,
+   "ra": 5,
+   "res": "L",
+   "w": 42,
+   "l": 50,
+   "rd": -31,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 93,
+   "pk": 824815,
+   "date": "2026-07-08",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "CHC",
+   "opp_id": 112,
+   "opp_name": "Chicago Cubs",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 7,
+   "ra": 9,
+   "res": "L",
+   "w": 42,
+   "l": 51,
+   "rd": -33,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 94,
+   "pk": 824816,
+   "date": "2026-07-09",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "CHC",
+   "opp_id": 112,
+   "opp_name": "Chicago Cubs",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 3,
+   "ra": 2,
+   "res": "W",
+   "w": 43,
+   "l": 51,
+   "rd": -32,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 95,
+   "pk": 824817,
+   "date": "2026-07-10",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "KC",
+   "opp_id": 118,
+   "opp_name": "Kansas City Royals",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 5,
+   "ra": 3,
+   "res": "W",
+   "w": 44,
+   "l": 51,
+   "rd": -30,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 96,
+   "pk": 824813,
+   "date": "2026-07-11",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "KC",
+   "opp_id": 118,
+   "opp_name": "Kansas City Royals",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 6,
+   "ra": 1,
+   "res": "W",
+   "w": 45,
+   "l": 51,
+   "rd": -25,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 97,
+   "pk": 824814,
+   "date": "2026-07-12",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "KC",
+   "opp_id": 118,
+   "opp_name": "Kansas City Royals",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 8,
+   "ra": 2,
+   "res": "W",
+   "w": 46,
+   "l": 51,
+   "rd": -19,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 98,
+   "pk": 824170,
+   "date": "2026-07-17",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "HOU",
+   "opp_id": 117,
+   "opp_name": "Houston Astros",
+   "venue": "Daikin Park",
+   "rs": 3,
+   "ra": 2,
+   "res": "W",
+   "w": 47,
+   "l": 51,
+   "rd": -18,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 99,
+   "pk": 824169,
+   "date": "2026-07-18",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "HOU",
+   "opp_id": 117,
+   "opp_name": "Houston Astros",
+   "venue": "Daikin Park",
+   "rs": 4,
+   "ra": 2,
+   "res": "W",
+   "w": 48,
+   "l": 51,
+   "rd": -16,
+   "innings": 11,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 100,
+   "pk": 824168,
+   "date": "2026-07-19",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "HOU",
+   "opp_id": 117,
+   "opp_name": "Houston Astros",
+   "venue": "Daikin Park",
+   "rs": 5,
+   "ra": 2,
+   "res": "W",
+   "w": 49,
+   "l": 51,
+   "rd": -13,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 101,
+   "pk": 824736,
+   "date": "2026-07-20",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "BOS",
+   "opp_id": 111,
+   "opp_name": "Boston Red Sox",
+   "venue": "Fenway Park",
+   "rs": 5,
+   "ra": 6,
+   "res": "L",
+   "w": 49,
+   "l": 52,
+   "rd": -14,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 102,
+   "pk": 824735,
+   "date": "2026-07-22",
+   "dh": true,
+   "gnum": 1,
+   "home": false,
+   "opp": "BOS",
+   "opp_id": 111,
+   "opp_name": "Boston Red Sox",
+   "venue": "Fenway Park",
+   "rs": 3,
+   "ra": 6,
+   "res": "L",
+   "w": 49,
+   "l": 53,
+   "rd": -17,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 103,
+   "pk": 824732,
+   "date": "2026-07-22",
+   "dh": true,
+   "gnum": 2,
+   "home": false,
+   "opp": "BOS",
+   "opp_id": 111,
+   "opp_name": "Boston Red Sox",
+   "venue": "Fenway Park",
+   "rs": 5,
+   "ra": 1,
+   "res": "W",
+   "w": 50,
+   "l": 53,
+   "rd": -13,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 104,
+   "pk": 824812,
+   "date": "2026-07-24",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "ATL",
+   "opp_id": 144,
+   "opp_name": "Atlanta Braves",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 6,
+   "ra": 7,
+   "res": "L",
+   "w": 50,
+   "l": 54,
+   "rd": -14,
+   "innings": 10,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 105,
+   "pk": 824811,
+   "date": "2026-07-25",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "ATL",
+   "opp_id": 144,
+   "opp_name": "Atlanta Braves",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 3,
+   "ra": 2,
+   "res": "W",
+   "w": 51,
+   "l": 54,
+   "rd": -13,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": true,
+   "day_night": "night"
+  },
+  {
+   "n": 106,
+   "pk": 824810,
+   "date": "2026-07-26",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "ATL",
+   "opp_id": 144,
+   "opp_name": "Atlanta Braves",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 2,
+   "ra": 3,
+   "res": "L",
+   "w": 51,
+   "l": 55,
+   "rd": -14,
+   "innings": 11,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 107,
+   "pk": 824245,
+   "date": "2026-07-27",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "DET",
+   "opp_id": 116,
+   "opp_name": "Detroit Tigers",
+   "venue": "Comerica Park",
+   "rs": 8,
+   "ra": 5,
+   "res": "W",
+   "w": 52,
+   "l": 55,
+   "rd": -11,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 108,
+   "pk": 824243,
+   "date": "2026-07-28",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "DET",
+   "opp_id": 116,
+   "opp_name": "Detroit Tigers",
+   "venue": "Comerica Park",
+   "rs": 0,
+   "ra": 14,
+   "res": "L",
+   "w": 52,
+   "l": 56,
+   "rd": -25,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 109,
+   "pk": 824242,
+   "date": "2026-07-29",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "DET",
+   "opp_id": 116,
+   "opp_name": "Detroit Tigers",
+   "venue": "Comerica Park",
+   "rs": 10,
+   "ra": 9,
+   "res": "W",
+   "w": 53,
+   "l": 56,
+   "rd": -24,
+   "innings": 12,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 110,
+   "pk": 824809,
+   "date": "2026-07-31",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "PHI",
+   "opp_id": 143,
+   "opp_name": "Philadelphia Phillies",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 6,
+   "ra": 4,
+   "res": "W",
+   "w": 54,
+   "l": 56,
+   "rd": -22,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 111,
+   "pk": 824808,
+   "date": "2026-08-01",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "PHI",
+   "opp_id": 143,
+   "opp_name": "Philadelphia Phillies",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 0,
+   "ra": 5,
+   "res": "L",
+   "w": 54,
+   "l": 57,
+   "rd": -27,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 112,
+   "pk": 824807,
+   "date": "2026-08-02",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "PHI",
+   "opp_id": 143,
+   "opp_name": "Philadelphia Phillies",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 0,
+   "ra": 8,
+   "res": "L",
+   "w": 54,
+   "l": 58,
+   "rd": -35,
+   "innings": 6,
+   "sched_innings": 9,
+   "short": true,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 113,
+   "pk": 824805,
+   "date": "2026-08-04",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "LAA",
+   "opp_id": 108,
+   "opp_name": "Los Angeles Angels",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 3,
+   "ra": 1,
+   "res": "W",
+   "w": 55,
+   "l": 58,
+   "rd": -33,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 114,
+   "pk": 824806,
+   "date": "2026-08-05",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "LAA",
+   "opp_id": 108,
+   "opp_name": "Los Angeles Angels",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 5,
+   "ra": 2,
+   "res": "W",
+   "w": 56,
+   "l": 58,
+   "rd": -30,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 115,
+   "pk": 824804,
+   "date": "2026-08-06",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "LAA",
+   "opp_id": 108,
+   "opp_name": "Los Angeles Angels",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 1,
+   "ra": 4,
+   "res": "L",
+   "w": 56,
+   "l": 59,
+   "rd": -33,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 116,
+   "pk": 822863,
+   "date": "2026-08-07",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "TEX",
+   "opp_id": 140,
+   "opp_name": "Texas Rangers",
+   "venue": "Globe Life Field",
+   "rs": 1,
+   "ra": 2,
+   "res": "L",
+   "w": 56,
+   "l": 60,
+   "rd": -34,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 117,
+   "pk": 822864,
+   "date": "2026-08-08",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "TEX",
+   "opp_id": 140,
+   "opp_name": "Texas Rangers",
+   "venue": "Globe Life Field",
+   "rs": 1,
+   "ra": 5,
+   "res": "L",
+   "w": 56,
+   "l": 61,
+   "rd": -38,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 118,
+   "pk": 822862,
+   "date": "2026-08-09",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "TEX",
+   "opp_id": 140,
+   "opp_name": "Texas Rangers",
+   "venue": "Globe Life Field",
+   "rs": 10,
+   "ra": 5,
+   "res": "W",
+   "w": 57,
+   "l": 61,
+   "rd": -33,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 119,
+   "pk": 823675,
+   "date": "2026-08-10",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "MIN",
+   "opp_id": 142,
+   "opp_name": "Minnesota Twins",
+   "venue": "Target Field",
+   "rs": 5,
+   "ra": 9,
+   "res": "L",
+   "w": 57,
+   "l": 62,
+   "rd": -37,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 120,
+   "pk": 823673,
+   "date": "2026-08-11",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "MIN",
+   "opp_id": 142,
+   "opp_name": "Minnesota Twins",
+   "venue": "Target Field",
+   "rs": 5,
+   "ra": 2,
+   "res": "W",
+   "w": 58,
+   "l": 62,
+   "rd": -34,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 121,
+   "pk": 823672,
+   "date": "2026-08-12",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "MIN",
+   "opp_id": 142,
+   "opp_name": "Minnesota Twins",
+   "venue": "Target Field",
+   "rs": 5,
+   "ra": 7,
+   "res": "L",
+   "w": 58,
+   "l": 63,
+   "rd": -36,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 122,
+   "pk": 822942,
+   "date": "2026-08-14",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "TB",
+   "opp_id": 139,
+   "opp_name": "Tampa Bay Rays",
+   "venue": "Tropicana Field",
+   "rs": 6,
+   "ra": 5,
+   "res": "W",
+   "w": 59,
+   "l": 63,
+   "rd": -35,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 123,
+   "pk": 822941,
+   "date": "2026-08-15",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "TB",
+   "opp_id": 139,
+   "opp_name": "Tampa Bay Rays",
+   "venue": "Tropicana Field",
+   "rs": 4,
+   "ra": 3,
+   "res": "W",
+   "w": 60,
+   "l": 63,
+   "rd": -34,
+   "innings": 10,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 124,
+   "pk": 822940,
+   "date": "2026-08-16",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "TB",
+   "opp_id": 139,
+   "opp_name": "Tampa Bay Rays",
+   "venue": "Tropicana Field",
+   "rs": 10,
+   "ra": 2,
+   "res": "W",
+   "w": 61,
+   "l": 63,
+   "rd": -26,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 125,
+   "pk": 822939,
+   "date": "2026-08-17",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "TB",
+   "opp_id": 139,
+   "opp_name": "Tampa Bay Rays",
+   "venue": "Tropicana Field",
+   "rs": 6,
+   "ra": 7,
+   "res": "L",
+   "w": 61,
+   "l": 64,
+   "rd": -27,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 126,
+   "pk": 824803,
+   "date": "2026-08-18",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "NYY",
+   "opp_id": 147,
+   "opp_name": "New York Yankees",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 1,
+   "ra": 3,
+   "res": "L",
+   "w": 61,
+   "l": 65,
+   "rd": -29,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 127,
+   "pk": 824801,
+   "date": "2026-08-19",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "NYY",
+   "opp_id": 147,
+   "opp_name": "New York Yankees",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 3,
+   "ra": 5,
+   "res": "L",
+   "w": 61,
+   "l": 66,
+   "rd": -31,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 128,
+   "pk": 824802,
+   "date": "2026-08-20",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "NYY",
+   "opp_id": 147,
+   "opp_name": "New York Yankees",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 1,
+   "ra": 6,
+   "res": "L",
+   "w": 61,
+   "l": 67,
+   "rd": -36,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 129,
+   "pk": 824800,
+   "date": "2026-08-21",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "TB",
+   "opp_id": 139,
+   "opp_name": "Tampa Bay Rays",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 5,
+   "ra": 3,
+   "res": "W",
+   "w": 62,
+   "l": 67,
+   "rd": -34,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 130,
+   "pk": 824798,
+   "date": "2026-08-22",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "TB",
+   "opp_id": 139,
+   "opp_name": "Tampa Bay Rays",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 3,
+   "ra": 2,
+   "res": "W",
+   "w": 63,
+   "l": 67,
+   "rd": -33,
+   "innings": 10,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": true,
+   "day_night": "night"
+  },
+  {
+   "n": 131,
+   "pk": 824799,
+   "date": "2026-08-23",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "TB",
+   "opp_id": 139,
+   "opp_name": "Tampa Bay Rays",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 1,
+   "ra": 3,
+   "res": "L",
+   "w": 63,
+   "l": 68,
+   "rd": -35,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 132,
+   "pk": 823016,
+   "date": "2026-08-25",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "STL",
+   "opp_id": 138,
+   "opp_name": "St. Louis Cardinals",
+   "venue": "Busch Stadium",
+   "rs": 13,
+   "ra": 1,
+   "res": "W",
+   "w": 64,
+   "l": 68,
+   "rd": -23,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 133,
+   "pk": 823015,
+   "date": "2026-08-26",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "STL",
+   "opp_id": 138,
+   "opp_name": "St. Louis Cardinals",
+   "venue": "Busch Stadium",
+   "rs": 8,
+   "ra": 7,
+   "res": "W",
+   "w": 65,
+   "l": 68,
+   "rd": -22,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 134,
+   "pk": 823014,
+   "date": "2026-08-27",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "STL",
+   "opp_id": 138,
+   "opp_name": "St. Louis Cardinals",
+   "venue": "Busch Stadium",
+   "rs": 5,
+   "ra": 7,
+   "res": "L",
+   "w": 65,
+   "l": 69,
+   "rd": -24,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 135,
+   "pk": 824960,
+   "date": "2026-08-28",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "ATH",
+   "opp_id": 133,
+   "opp_name": "Athletics",
+   "venue": "Sutter Health Park",
+   "rs": 4,
+   "ra": 3,
+   "res": "W",
+   "w": 66,
+   "l": 69,
+   "rd": -23,
+   "innings": 10,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 136,
+   "pk": 824961,
+   "date": "2026-08-29",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "ATH",
+   "opp_id": 133,
+   "opp_name": "Athletics",
+   "venue": "Sutter Health Park",
+   "rs": 5,
+   "ra": 3,
+   "res": "W",
+   "w": 67,
+   "l": 69,
+   "rd": -21,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 137,
+   "pk": 824959,
+   "date": "2026-08-30",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "ATH",
+   "opp_id": 133,
+   "opp_name": "Athletics",
+   "venue": "Sutter Health Park",
+   "rs": 8,
+   "ra": 5,
+   "res": "W",
+   "w": 68,
+   "l": 69,
+   "rd": -18,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 138,
+   "pk": 824314,
+   "date": "2026-08-31",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "COL",
+   "opp_id": 115,
+   "opp_name": "Colorado Rockies",
+   "venue": "Coors Field",
+   "rs": 2,
+   "ra": 1,
+   "res": "W",
+   "w": 69,
+   "l": 69,
+   "rd": -17,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 139,
+   "pk": 824313,
+   "date": "2026-09-01",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "COL",
+   "opp_id": 115,
+   "opp_name": "Colorado Rockies",
+   "venue": "Coors Field",
+   "rs": 2,
+   "ra": 4,
+   "res": "L",
+   "w": 69,
+   "l": 70,
+   "rd": -19,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 140,
+   "pk": 824312,
+   "date": "2026-09-02",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "COL",
+   "opp_id": 115,
+   "opp_name": "Colorado Rockies",
+   "venue": "Coors Field",
+   "rs": 5,
+   "ra": 6,
+   "res": "L",
+   "w": 69,
+   "l": 71,
+   "rd": -20,
+   "innings": 11,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 141,
+   "pk": 824796,
+   "date": "2026-09-03",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "BOS",
+   "opp_id": 111,
+   "opp_name": "Boston Red Sox",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 5,
+   "ra": 6,
+   "res": "L",
+   "w": 69,
+   "l": 72,
+   "rd": -21,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 142,
+   "pk": 824797,
+   "date": "2026-09-04",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "BOS",
+   "opp_id": 111,
+   "opp_name": "Boston Red Sox",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 0,
+   "ra": 1,
+   "res": "L",
+   "w": 69,
+   "l": 73,
+   "rd": -22,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 143,
+   "pk": 824795,
+   "date": "2026-09-05",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "BOS",
+   "opp_id": 111,
+   "opp_name": "Boston Red Sox",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 0,
+   "ra": 5,
+   "res": "L",
+   "w": 69,
+   "l": 74,
+   "rd": -27,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 144,
+   "pk": 824794,
+   "date": "2026-09-06",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "BOS",
+   "opp_id": 111,
+   "opp_name": "Boston Red Sox",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 1,
+   "ra": 3,
+   "res": "L",
+   "w": 69,
+   "l": 75,
+   "rd": -29,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 145,
+   "pk": 824793,
+   "date": "2026-09-07",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "CLE",
+   "opp_id": 114,
+   "opp_name": "Cleveland Guardians",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 6,
+   "ra": 4,
+   "res": "W",
+   "w": 70,
+   "l": 75,
+   "rd": -27,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 146,
+   "pk": 824792,
+   "date": "2026-09-08",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "CLE",
+   "opp_id": 114,
+   "opp_name": "Cleveland Guardians",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 5,
+   "ra": 9,
+   "res": "L",
+   "w": 70,
+   "l": 76,
+   "rd": -31,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 147,
+   "pk": 824791,
+   "date": "2026-09-09",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "CLE",
+   "opp_id": 114,
+   "opp_name": "Cleveland Guardians",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 9,
+   "ra": 5,
+   "res": "W",
+   "w": 71,
+   "l": 76,
+   "rd": -27,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 148,
+   "pk": 822767,
+   "date": "2026-09-11",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "TOR",
+   "opp_id": 141,
+   "opp_name": "Toronto Blue Jays",
+   "venue": "Rogers Centre",
+   "rs": 7,
+   "ra": 4,
+   "res": "W",
+   "w": 72,
+   "l": 76,
+   "rd": -24,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 149,
+   "pk": 822768,
+   "date": "2026-09-12",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "TOR",
+   "opp_id": 141,
+   "opp_name": "Toronto Blue Jays",
+   "venue": "Rogers Centre",
+   "rs": 3,
+   "ra": 7,
+   "res": "L",
+   "w": 72,
+   "l": 77,
+   "rd": -28,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 150,
+   "pk": 822764,
+   "date": "2026-09-13",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "TOR",
+   "opp_id": 141,
+   "opp_name": "Toronto Blue Jays",
+   "venue": "Rogers Centre",
+   "rs": 1,
+   "ra": 8,
+   "res": "L",
+   "w": 72,
+   "l": 78,
+   "rd": -35,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 151,
+   "pk": 823575,
+   "date": "2026-09-14",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "NYM",
+   "opp_id": 121,
+   "opp_name": "New York Mets",
+   "venue": "Citi Field",
+   "rs": 2,
+   "ra": 1,
+   "res": "W",
+   "w": 73,
+   "l": 78,
+   "rd": -34,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 152,
+   "pk": 823574,
+   "date": "2026-09-15",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "NYM",
+   "opp_id": 121,
+   "opp_name": "New York Mets",
+   "venue": "Citi Field",
+   "rs": 7,
+   "ra": 5,
+   "res": "W",
+   "w": 74,
+   "l": 78,
+   "rd": -32,
+   "innings": 11,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 153,
+   "pk": 823576,
+   "date": "2026-09-16",
+   "dh": false,
+   "gnum": 1,
+   "home": false,
+   "opp": "NYM",
+   "opp_id": 121,
+   "opp_name": "New York Mets",
+   "venue": "Citi Field",
+   "rs": 7,
+   "ra": 1,
+   "res": "W",
+   "w": 75,
+   "l": 78,
+   "rd": -26,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 154,
+   "pk": 824790,
+   "date": "2026-09-18",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "MIL",
+   "opp_id": 158,
+   "opp_name": "Milwaukee Brewers",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 5,
+   "ra": 6,
+   "res": "L",
+   "w": 75,
+   "l": 79,
+   "rd": -27,
+   "innings": 10,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 155,
+   "pk": 824788,
+   "date": "2026-09-19",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "MIL",
+   "opp_id": 158,
+   "opp_name": "Milwaukee Brewers",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 0,
+   "ra": 1,
+   "res": "L",
+   "w": 75,
+   "l": 80,
+   "rd": -28,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 156,
+   "pk": 824789,
+   "date": "2026-09-20",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "MIL",
+   "opp_id": 158,
+   "opp_name": "Milwaukee Brewers",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 0,
+   "ra": 3,
+   "res": "L",
+   "w": 75,
+   "l": 81,
+   "rd": -31,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 157,
+   "pk": 824787,
+   "date": "2026-09-21",
+   "dh": false,
+   "gnum": 1,
+   "home": true,
+   "opp": "TOR",
+   "opp_id": 141,
+   "opp_name": "Toronto Blue Jays",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 4,
+   "ra": 3,
+   "res": "W",
+   "w": 76,
+   "l": 81,
+   "rd": -30,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 158,
+   "pk": 824785,
+   "date": "2026-09-23",
+   "dh": true,
+   "gnum": 1,
+   "home": true,
+   "opp": "TOR",
+   "opp_id": 141,
+   "opp_name": "Toronto Blue Jays",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 4,
+   "ra": 2,
+   "res": "W",
+   "w": 77,
+   "l": 81,
+   "rd": -28,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "day"
+  },
+  {
+   "n": 159,
+   "pk": 824784,
+   "date": "2026-09-23",
+   "dh": true,
+   "gnum": 2,
+   "home": true,
+   "opp": "TOR",
+   "opp_id": 141,
+   "opp_name": "Toronto Blue Jays",
+   "venue": "Oriole Park at Camden Yards",
+   "rs": 4,
+   "ra": 2,
+   "res": "W",
+   "w": 78,
+   "l": 81,
+   "rd": -26,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 160,
+   "pk": 823491,
+   "date": "2026-09-25",
+   "dh": true,
+   "gnum": 1,
+   "home": false,
+   "opp": "NYY",
+   "opp_id": 147,
+   "opp_name": "New York Yankees",
+   "venue": "Yankee Stadium",
+   "rs": 10,
+   "ra": 2,
+   "res": "W",
+   "w": 79,
+   "l": 81,
+   "rd": -18,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  },
+  {
+   "n": 161,
+   "pk": 823489,
+   "date": "2026-09-25",
+   "dh": true,
+   "gnum": 2,
+   "home": false,
+   "opp": "NYY",
+   "opp_id": 147,
+   "opp_name": "New York Yankees",
+   "venue": "Yankee Stadium",
+   "rs": 3,
+   "ra": 6,
+   "res": "L",
+   "w": 79,
+   "l": 82,
+   "rd": -21,
+   "innings": 9,
+   "sched_innings": 9,
+   "short": false,
+   "walkoff": false,
+   "day_night": "night"
+  }
+ ],
+ "months": [
+  {
+   "w": 15,
+   "l": 16,
+   "rs": 145,
+   "ra": 157,
+   "g": 31,
+   "key": "2026-04",
+   "label": "March/April",
+   "results": [
+    "W",
+    "L",
+    "W",
+    "L",
+    "L",
+    "W",
+    "L",
+    "L",
+    "L",
+    "W",
+    "W",
+    "W",
+    "L",
+    "W",
+    "W",
+    "W",
+    "L",
+    "L",
+    "L",
+    "W",
+    "L",
+    "L",
+    "W",
+    "L",
+    "W",
+    "W",
+    "L",
+    "L",
+    "W",
+    "W",
+    "L"
+   ]
+  },
+  {
+   "w": 13,
+   "l": 16,
+   "rs": 130,
+   "ra": 156,
+   "g": 29,
+   "key": "2026-05",
+   "label": "May",
+   "results": [
+    "L",
+    "L",
+    "L",
+    "L",
+    "W",
+    "W",
+    "L",
+    "L",
+    "L",
+    "W",
+    "W",
+    "L",
+    "W",
+    "L",
+    "L",
+    "W",
+    "L",
+    "L",
+    "L",
+    "W",
+    "W",
+    "L",
+    "W",
+    "W",
+    "W",
+    "L",
+    "L",
+    "W",
+    "W"
+   ]
+  },
+  {
+   "w": 11,
+   "l": 16,
+   "rs": 122,
+   "ra": 122,
+   "g": 27,
+   "key": "2026-06",
+   "label": "June",
+   "results": [
+    "W",
+    "L",
+    "W",
+    "W",
+    "L",
+    "L",
+    "L",
+    "L",
+    "W",
+    "W",
+    "W",
+    "L",
+    "L",
+    "L",
+    "W",
+    "L",
+    "L",
+    "W",
+    "W",
+    "W",
+    "L",
+    "L",
+    "W",
+    "L",
+    "L",
+    "L",
+    "L"
+   ]
+  },
+  {
+   "w": 15,
+   "l": 8,
+   "rs": 110,
+   "ra": 94,
+   "g": 23,
+   "key": "2026-07",
+   "label": "July",
+   "results": [
+    "W",
+    "W",
+    "W",
+    "L",
+    "L",
+    "L",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "L",
+    "L",
+    "W",
+    "L",
+    "W",
+    "L",
+    "W",
+    "L",
+    "W",
+    "W"
+   ]
+  },
+  {
+   "w": 15,
+   "l": 13,
+   "rs": 121,
+   "ra": 116,
+   "g": 28,
+   "key": "2026-08",
+   "label": "August",
+   "results": [
+    "L",
+    "L",
+    "W",
+    "W",
+    "L",
+    "L",
+    "L",
+    "W",
+    "L",
+    "W",
+    "L",
+    "W",
+    "W",
+    "W",
+    "L",
+    "L",
+    "L",
+    "L",
+    "W",
+    "W",
+    "L",
+    "W",
+    "W",
+    "L",
+    "W",
+    "W",
+    "W",
+    "W"
+   ]
+  },
+  {
+   "w": 10,
+   "l": 13,
+   "rs": 90,
+   "ra": 94,
+   "g": 23,
+   "key": "2026-09",
+   "label": "September",
+   "results": [
+    "L",
+    "L",
+    "L",
+    "L",
+    "L",
+    "L",
+    "W",
+    "L",
+    "W",
+    "W",
+    "L",
+    "L",
+    "W",
+    "W",
+    "W",
+    "L",
+    "L",
+    "L",
+    "W",
+    "W",
+    "W",
+    "W",
+    "L"
+   ]
+  }
+ ],
+ "splits": [
+  {
+   "name": "Home",
+   "w": 39,
+   "l": 42,
+   "rs": 340,
+   "ra": 351,
+   "g": 81
+  },
+  {
+   "name": "Road",
+   "w": 40,
+   "l": 40,
+   "rs": 378,
+   "ra": 388,
+   "g": 80
+  },
+  {
+   "name": "One-run games",
+   "w": 18,
+   "l": 24,
+   "rs": 154,
+   "ra": 160,
+   "g": 42
+  },
+  {
+   "name": "Blowouts (5+ runs)",
+   "w": 19,
+   "l": 19,
+   "rs": 206,
+   "ra": 220,
+   "g": 38
+  },
+  {
+   "name": "Extra innings",
+   "w": 8,
+   "l": 8,
+   "rs": 85,
+   "ra": 83,
+   "g": 16
+  },
+  {
+   "name": "vs AL East",
+   "w": 22,
+   "l": 29,
+   "rs": 222,
+   "ra": 253,
+   "g": 51
+  },
+  {
+   "name": "vs AL",
+   "w": 58,
+   "l": 55,
+   "rs": 507,
+   "ra": 527,
+   "g": 113
+  },
+  {
+   "name": "vs NL",
+   "w": 21,
+   "l": 27,
+   "rs": 211,
+   "ra": 212,
+   "g": 48
+  },
+  {
+   "name": "Day",
+   "w": 28,
+   "l": 34,
+   "rs": 284,
+   "ra": 310,
+   "g": 62
+  },
+  {
+   "name": "Night",
+   "w": 51,
+   "l": 48,
+   "rs": 434,
+   "ra": 429,
+   "g": 99
+  },
+  {
+   "name": "Doubleheader games",
+   "w": 6,
+   "l": 4,
+   "rs": 50,
+   "ra": 40,
+   "g": 10
+  }
+ ],
+ "h2h": [
+  {
+   "w": 3,
+   "l": 9,
+   "rs": 40,
+   "ra": 69,
+   "g": 12,
+   "team": "NYY",
+   "name": "Yankees"
+  },
+  {
+   "w": 4,
+   "l": 9,
+   "rs": 46,
+   "ra": 65,
+   "g": 13,
+   "team": "BOS",
+   "name": "Red Sox"
+  },
+  {
+   "w": 7,
+   "l": 6,
+   "rs": 65,
+   "ra": 59,
+   "g": 13,
+   "team": "TOR",
+   "name": "Blue Jays"
+  },
+  {
+   "w": 8,
+   "l": 5,
+   "rs": 71,
+   "ra": 60,
+   "g": 13,
+   "team": "TB",
+   "name": "Rays"
+  }
+ ],
+ "streaks": {
+  "win": [
+   {
+    "len": 7,
+    "from": "2026-07-09",
+    "to": "2026-07-19",
+    "start_n": 94,
+    "end_n": 100,
+    "rs": 34,
+    "ra": 14
+   },
+   {
+    "len": 4,
+    "from": "2026-08-28",
+    "to": "2026-08-31",
+    "start_n": 135,
+    "end_n": 138,
+    "rs": 19,
+    "ra": 12
+   },
+   {
+    "len": 4,
+    "from": "2026-09-21",
+    "to": "2026-09-25",
+    "start_n": 157,
+    "end_n": 160,
+    "rs": 22,
+    "ra": 9
+   }
+  ],
+  "lose": [
+   {
+    "len": 6,
+    "from": "2026-09-01",
+    "to": "2026-09-06",
+    "start_n": 139,
+    "end_n": 144,
+    "rs": 13,
+    "ra": 25
+   },
+   {
+    "len": 5,
+    "from": "2026-04-30",
+    "to": "2026-05-04",
+    "start_n": 31,
+    "end_n": 35,
+    "rs": 15,
+    "ra": 50
+   },
+   {
+    "len": 4,
+    "from": "2026-06-06",
+    "to": "2026-06-09",
+    "start_n": 65,
+    "end_n": 68,
+    "rs": 16,
+    "ra": 24
+   }
+  ],
+  "best20": {
+   "n": 20,
+   "w": 13,
+   "l": 7,
+   "from": "2026-07-01",
+   "to": "2026-07-27",
+   "start_n": 88
+  },
+  "worst20": {
+   "n": 20,
+   "w": 6,
+   "l": 14,
+   "from": "2026-04-30",
+   "to": "2026-05-20",
+   "start_n": 31
+  }
+ },
+ "peaks": {
+  "high": {
+   "over": 2,
+   "date": "2026-04-13",
+   "rec": "9-7",
+   "n": 16
+  },
+  "low": {
+   "over": -9,
+   "date": "2026-06-30",
+   "rec": "39-48",
+   "n": 87
+  },
+  "last_500": {
+   "date": "2026-08-31",
+   "rec": "69-69",
+   "n": 138
+  }
+ },
+ "games": {
+  "best": [
+   {
+    "n": 132,
+    "date": "2026-08-25",
+    "opp": "STL",
+    "home": false,
+    "rs": 13,
+    "ra": 1,
+    "res": "W",
+    "innings": 9,
+    "walkoff": false,
+    "pk": 823016,
+    "venue": "Busch Stadium"
+   },
+   {
+    "n": 79,
+    "date": "2026-06-21",
+    "opp": "LAD",
+    "home": false,
+    "rs": 12,
+    "ra": 1,
+    "res": "W",
+    "innings": 9,
+    "walkoff": false,
+    "pk": 823934,
+    "venue": "UNIQLO Field at Dodger Stadium"
+   },
+   {
+    "n": 64,
+    "date": "2026-06-05",
+    "opp": "TOR",
+    "home": false,
+    "rs": 13,
+    "ra": 3,
+    "res": "W",
+    "innings": 9,
+    "walkoff": false,
+    "pk": 822810,
+    "venue": "Rogers Centre"
+   },
+   {
+    "n": 56,
+    "date": "2026-05-27",
+    "opp": "TB",
+    "home": true,
+    "rs": 11,
+    "ra": 2,
+    "res": "W",
+    "innings": 9,
+    "walkoff": false,
+    "pk": 824836,
+    "venue": "Oriole Park at Camden Yards"
+   },
+   {
+    "n": 124,
+    "date": "2026-08-16",
+    "opp": "TB",
+    "home": false,
+    "rs": 10,
+    "ra": 2,
+    "res": "W",
+    "innings": 9,
+    "walkoff": false,
+    "pk": 822940,
+    "venue": "Tropicana Field"
+   }
+  ],
+  "worst": [
+   {
+    "n": 27,
+    "date": "2026-04-25",
+    "opp": "BOS",
+    "home": true,
+    "rs": 1,
+    "ra": 17,
+    "res": "L",
+    "innings": 9,
+    "walkoff": false,
+    "pk": 824851,
+    "venue": "Oriole Park at Camden Yards"
+   },
+   {
+    "n": 108,
+    "date": "2026-07-28",
+    "opp": "DET",
+    "home": false,
+    "rs": 0,
+    "ra": 14,
+    "res": "L",
+    "innings": 9,
+    "walkoff": false,
+    "pk": 824243,
+    "venue": "Comerica Park"
+   },
+   {
+    "n": 35,
+    "date": "2026-05-04",
+    "opp": "NYY",
+    "home": false,
+    "rs": 1,
+    "ra": 12,
+    "res": "L",
+    "innings": 9,
+    "walkoff": false,
+    "pk": 823552,
+    "venue": "Yankee Stadium"
+   },
+   {
+    "n": 48,
+    "date": "2026-05-18",
+    "opp": "TB",
+    "home": false,
+    "rs": 6,
+    "ra": 16,
+    "res": "L",
+    "innings": 9,
+    "walkoff": false,
+    "pk": 822980,
+    "venue": "Tropicana Field"
+   },
+   {
+    "n": 46,
+    "date": "2026-05-16",
+    "opp": "WSH",
+    "home": false,
+    "rs": 3,
+    "ra": 13,
+    "res": "L",
+    "innings": 9,
+    "walkoff": false,
+    "pk": 822737,
+    "venue": "Nationals Park"
+   }
+  ],
+  "most_runs": [
+   {
+    "n": 64,
+    "date": "2026-06-05",
+    "opp": "TOR",
+    "home": false,
+    "rs": 13,
+    "ra": 3,
+    "res": "W",
+    "innings": 9,
+    "walkoff": false,
+    "pk": 822810,
+    "venue": "Rogers Centre"
+   },
+   {
+    "n": 132,
+    "date": "2026-08-25",
+    "opp": "STL",
+    "home": false,
+    "rs": 13,
+    "ra": 1,
+    "res": "W",
+    "innings": 9,
+    "walkoff": false,
+    "pk": 823016,
+    "venue": "Busch Stadium"
+   }
+  ],
+  "walkoffs": [
+   {
+    "n": 52,
+    "date": "2026-05-24",
+    "opp": "DET",
+    "home": true,
+    "rs": 5,
+    "ra": 3,
+    "res": "W",
+    "innings": 9,
+    "walkoff": true,
+    "pk": 824839,
+    "venue": "Oriole Park at Camden Yards"
+   },
+   {
+    "n": 54,
+    "date": "2026-05-25",
+    "opp": "TB",
+    "home": true,
+    "rs": 9,
+    "ra": 7,
+    "res": "W",
+    "innings": 13,
+    "walkoff": true,
+    "pk": 824838,
+    "venue": "Oriole Park at Camden Yards"
+   },
+   {
+    "n": 59,
+    "date": "2026-05-30",
+    "opp": "TOR",
+    "home": true,
+    "rs": 6,
+    "ra": 5,
+    "res": "W",
+    "innings": 9,
+    "walkoff": true,
+    "pk": 824833,
+    "venue": "Oriole Park at Camden Yards"
+   },
+   {
+    "n": 105,
+    "date": "2026-07-25",
+    "opp": "ATL",
+    "home": true,
+    "rs": 3,
+    "ra": 2,
+    "res": "W",
+    "innings": 9,
+    "walkoff": true,
+    "pk": 824811,
+    "venue": "Oriole Park at Camden Yards"
+   },
+   {
+    "n": 130,
+    "date": "2026-08-22",
+    "opp": "TB",
+    "home": true,
+    "rs": 3,
+    "ra": 2,
+    "res": "W",
+    "innings": 10,
+    "walkoff": true,
+    "pk": 824798,
+    "venue": "Oriole Park at Camden Yards"
+   }
+  ],
+  "longest": {
+   "n": 54,
+   "date": "2026-05-25",
+   "opp": "TB",
+   "home": true,
+   "rs": 9,
+   "ra": 7,
+   "res": "W",
+   "innings": 13,
+   "walkoff": true,
+   "pk": 824838,
+   "venue": "Oriole Park at Camden Yards"
+  },
+  "shutouts_for": [
+   {
+    "n": 44,
+    "date": "2026-05-13",
+    "opp": "NYY",
+    "home": true,
+    "rs": 7,
+    "ra": 0,
+    "res": "W",
+    "innings": 9,
+    "walkoff": false,
+    "pk": 824841,
+    "venue": "Oriole Park at Camden Yards"
+   },
+   {
+    "n": 89,
+    "date": "2026-07-03",
+    "opp": "CIN",
+    "home": false,
+    "rs": 3,
+    "ra": 0,
+    "res": "W",
+    "innings": 9,
+    "walkoff": false,
+    "pk": 824498,
+    "venue": "Great American Ball Park"
+   }
+  ],
+  "shutouts_against": [
+   {
+    "n": 76,
+    "date": "2026-06-18",
+    "opp": "SEA",
+    "home": false,
+    "rs": 0,
+    "ra": 3,
+    "res": "L",
+    "innings": 9,
+    "walkoff": false,
+    "pk": 823125,
+    "venue": "T-Mobile Park"
+   },
+   {
+    "n": 108,
+    "date": "2026-07-28",
+    "opp": "DET",
+    "home": false,
+    "rs": 0,
+    "ra": 14,
+    "res": "L",
+    "innings": 9,
+    "walkoff": false,
+    "pk": 824243,
+    "venue": "Comerica Park"
+   },
+   {
+    "n": 111,
+    "date": "2026-08-01",
+    "opp": "PHI",
+    "home": true,
+    "rs": 0,
+    "ra": 5,
+    "res": "L",
+    "innings": 9,
+    "walkoff": false,
+    "pk": 824808,
+    "venue": "Oriole Park at Camden Yards"
+   },
+   {
+    "n": 112,
+    "date": "2026-08-02",
+    "opp": "PHI",
+    "home": true,
+    "rs": 0,
+    "ra": 8,
+    "res": "L",
+    "innings": 6,
+    "walkoff": false,
+    "pk": 824807,
+    "venue": "Oriole Park at Camden Yards"
+   },
+   {
+    "n": 142,
+    "date": "2026-09-04",
+    "opp": "BOS",
+    "home": true,
+    "rs": 0,
+    "ra": 1,
+    "res": "L",
+    "innings": 9,
+    "walkoff": false,
+    "pk": 824797,
+    "venue": "Oriole Park at Camden Yards"
+   },
+   {
+    "n": 143,
+    "date": "2026-09-05",
+    "opp": "BOS",
+    "home": true,
+    "rs": 0,
+    "ra": 5,
+    "res": "L",
+    "innings": 9,
+    "walkoff": false,
+    "pk": 824795,
+    "venue": "Oriole Park at Camden Yards"
+   },
+   {
+    "n": 155,
+    "date": "2026-09-19",
+    "opp": "MIL",
+    "home": true,
+    "rs": 0,
+    "ra": 1,
+    "res": "L",
+    "innings": 9,
+    "walkoff": false,
+    "pk": 824788,
+    "venue": "Oriole Park at Camden Yards"
+   },
+   {
+    "n": 156,
+    "date": "2026-09-20",
+    "opp": "MIL",
+    "home": true,
+    "rs": 0,
+    "ra": 3,
+    "res": "L",
+    "innings": 9,
+    "walkoff": false,
+    "pk": 824789,
+    "venue": "Oriole Park at Camden Yards"
+   }
+  ]
+ },
+ "race": {
+  "dates": [
+   "2026-03-25",
+   "2026-03-26",
+   "2026-03-27",
+   "2026-03-28",
+   "2026-03-29",
+   "2026-03-30",
+   "2026-03-31",
+   "2026-04-01",
+   "2026-04-03",
+   "2026-04-04",
+   "2026-04-05",
+   "2026-04-06",
+   "2026-04-07",
+   "2026-04-08",
+   "2026-04-09",
+   "2026-04-10",
+   "2026-04-11",
+   "2026-04-12",
+   "2026-04-13",
+   "2026-04-14",
+   "2026-04-15",
+   "2026-04-16",
+   "2026-04-17",
+   "2026-04-18",
+   "2026-04-19",
+   "2026-04-20",
+   "2026-04-21",
+   "2026-04-22",
+   "2026-04-23",
+   "2026-04-24",
+   "2026-04-25",
+   "2026-04-26",
+   "2026-04-27",
+   "2026-04-28",
+   "2026-04-29",
+   "2026-04-30",
+   "2026-05-01",
+   "2026-05-02",
+   "2026-05-03",
+   "2026-05-04",
+   "2026-05-05",
+   "2026-05-06",
+   "2026-05-07",
+   "2026-05-08",
+   "2026-05-09",
+   "2026-05-10",
+   "2026-05-11",
+   "2026-05-12",
+   "2026-05-13",
+   "2026-05-14",
+   "2026-05-15",
+   "2026-05-16",
+   "2026-05-17",
+   "2026-05-18",
+   "2026-05-19",
+   "2026-05-20",
+   "2026-05-21",
+   "2026-05-22",
+   "2026-05-23",
+   "2026-05-24",
+   "2026-05-25",
+   "2026-05-26",
+   "2026-05-27",
+   "2026-05-28",
+   "2026-05-29",
+   "2026-05-30",
+   "2026-05-31",
+   "2026-06-01",
+   "2026-06-02",
+   "2026-06-03",
+   "2026-06-04",
+   "2026-06-05",
+   "2026-06-06",
+   "2026-06-07",
+   "2026-06-08",
+   "2026-06-09",
+   "2026-06-10",
+   "2026-06-11",
+   "2026-06-12",
+   "2026-06-13",
+   "2026-06-14",
+   "2026-06-15",
+   "2026-06-16",
+   "2026-06-17",
+   "2026-06-18",
+   "2026-06-19",
+   "2026-06-20",
+   "2026-06-21",
+   "2026-06-22",
+   "2026-06-23",
+   "2026-06-24",
+   "2026-06-25",
+   "2026-06-26",
+   "2026-06-27",
+   "2026-06-28",
+   "2026-06-29",
+   "2026-06-30",
+   "2026-07-01",
+   "2026-07-02",
+   "2026-07-03",
+   "2026-07-04",
+   "2026-07-05",
+   "2026-07-06",
+   "2026-07-07",
+   "2026-07-08",
+   "2026-07-09",
+   "2026-07-10",
+   "2026-07-11",
+   "2026-07-12",
+   "2026-07-17",
+   "2026-07-18",
+   "2026-07-19",
+   "2026-07-20",
+   "2026-07-21",
+   "2026-07-22",
+   "2026-07-23",
+   "2026-07-24",
+   "2026-07-25",
+   "2026-07-26",
+   "2026-07-27",
+   "2026-07-28",
+   "2026-07-29",
+   "2026-07-30",
+   "2026-07-31",
+   "2026-08-01",
+   "2026-08-02",
+   "2026-08-03",
+   "2026-08-04",
+   "2026-08-05",
+   "2026-08-06",
+   "2026-08-07",
+   "2026-08-08",
+   "2026-08-09",
+   "2026-08-10",
+   "2026-08-11",
+   "2026-08-12",
+   "2026-08-13",
+   "2026-08-14",
+   "2026-08-15",
+   "2026-08-16",
+   "2026-08-17",
+   "2026-08-18",
+   "2026-08-19",
+   "2026-08-20",
+   "2026-08-21",
+   "2026-08-22",
+   "2026-08-23",
+   "2026-08-24",
+   "2026-08-25",
+   "2026-08-26",
+   "2026-08-27",
+   "2026-08-28",
+   "2026-08-29",
+   "2026-08-30",
+   "2026-08-31",
+   "2026-09-01",
+   "2026-09-02",
+   "2026-09-03",
+   "2026-09-04",
+   "2026-09-05",
+   "2026-09-06",
+   "2026-09-07",
+   "2026-09-08",
+   "2026-09-09",
+   "2026-09-10",
+   "2026-09-11",
+   "2026-09-12",
+   "2026-09-13",
+   "2026-09-14",
+   "2026-09-15",
+   "2026-09-16",
+   "2026-09-17",
+   "2026-09-18",
+   "2026-09-19",
+   "2026-09-20",
+   "2026-09-21",
+   "2026-09-22",
+   "2026-09-23",
+   "2026-09-24",
+   "2026-09-25",
+   "2026-09-26",
+   "2026-09-27"
+  ],
+  "series": {
+   "BAL": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     4,
+     6
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     6,
+     6
+    ],
+    [
+     6,
+     6
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     7,
+     7
+    ],
+    [
+     8,
+     7
+    ],
+    [
+     9,
+     7
+    ],
+    [
+     9,
+     8
+    ],
+    [
+     9,
+     9
+    ],
+    [
+     9,
+     10
+    ],
+    [
+     10,
+     10
+    ],
+    [
+     10,
+     11
+    ],
+    [
+     10,
+     12
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     11,
+     13
+    ],
+    [
+     12,
+     13
+    ],
+    [
+     12,
+     13
+    ],
+    [
+     13,
+     13
+    ],
+    [
+     13,
+     14
+    ],
+    [
+     13,
+     15
+    ],
+    [
+     13,
+     15
+    ],
+    [
+     14,
+     15
+    ],
+    [
+     14,
+     15
+    ],
+    [
+     15,
+     16
+    ],
+    [
+     15,
+     17
+    ],
+    [
+     15,
+     18
+    ],
+    [
+     15,
+     19
+    ],
+    [
+     15,
+     20
+    ],
+    [
+     16,
+     20
+    ],
+    [
+     17,
+     20
+    ],
+    [
+     17,
+     21
+    ],
+    [
+     17,
+     22
+    ],
+    [
+     17,
+     23
+    ],
+    [
+     18,
+     23
+    ],
+    [
+     19,
+     23
+    ],
+    [
+     19,
+     24
+    ],
+    [
+     20,
+     24
+    ],
+    [
+     20,
+     24
+    ],
+    [
+     20,
+     25
+    ],
+    [
+     20,
+     26
+    ],
+    [
+     21,
+     26
+    ],
+    [
+     21,
+     27
+    ],
+    [
+     21,
+     28
+    ],
+    [
+     21,
+     29
+    ],
+    [
+     21,
+     29
+    ],
+    [
+     22,
+     29
+    ],
+    [
+     22,
+     29
+    ],
+    [
+     23,
+     30
+    ],
+    [
+     24,
+     30
+    ],
+    [
+     25,
+     30
+    ],
+    [
+     26,
+     30
+    ],
+    [
+     26,
+     31
+    ],
+    [
+     26,
+     32
+    ],
+    [
+     27,
+     32
+    ],
+    [
+     28,
+     32
+    ],
+    [
+     28,
+     32
+    ],
+    [
+     29,
+     32
+    ],
+    [
+     29,
+     33
+    ],
+    [
+     30,
+     33
+    ],
+    [
+     31,
+     33
+    ],
+    [
+     31,
+     34
+    ],
+    [
+     31,
+     35
+    ],
+    [
+     31,
+     36
+    ],
+    [
+     31,
+     37
+    ],
+    [
+     32,
+     37
+    ],
+    [
+     33,
+     37
+    ],
+    [
+     34,
+     37
+    ],
+    [
+     34,
+     38
+    ],
+    [
+     34,
+     39
+    ],
+    [
+     34,
+     39
+    ],
+    [
+     34,
+     40
+    ],
+    [
+     35,
+     40
+    ],
+    [
+     35,
+     41
+    ],
+    [
+     35,
+     42
+    ],
+    [
+     36,
+     42
+    ],
+    [
+     37,
+     42
+    ],
+    [
+     38,
+     42
+    ],
+    [
+     38,
+     43
+    ],
+    [
+     38,
+     44
+    ],
+    [
+     38,
+     44
+    ],
+    [
+     39,
+     44
+    ],
+    [
+     39,
+     45
+    ],
+    [
+     39,
+     46
+    ],
+    [
+     39,
+     47
+    ],
+    [
+     39,
+     48
+    ],
+    [
+     40,
+     48
+    ],
+    [
+     40,
+     48
+    ],
+    [
+     41,
+     48
+    ],
+    [
+     42,
+     48
+    ],
+    [
+     42,
+     49
+    ],
+    [
+     42,
+     49
+    ],
+    [
+     42,
+     50
+    ],
+    [
+     42,
+     51
+    ],
+    [
+     43,
+     51
+    ],
+    [
+     44,
+     51
+    ],
+    [
+     45,
+     51
+    ],
+    [
+     46,
+     51
+    ],
+    [
+     47,
+     51
+    ],
+    [
+     48,
+     51
+    ],
+    [
+     49,
+     51
+    ],
+    [
+     49,
+     52
+    ],
+    [
+     49,
+     52
+    ],
+    [
+     50,
+     53
+    ],
+    [
+     50,
+     53
+    ],
+    [
+     50,
+     54
+    ],
+    [
+     51,
+     54
+    ],
+    [
+     51,
+     55
+    ],
+    [
+     52,
+     55
+    ],
+    [
+     52,
+     56
+    ],
+    [
+     53,
+     56
+    ],
+    [
+     53,
+     56
+    ],
+    [
+     54,
+     56
+    ],
+    [
+     54,
+     57
+    ],
+    [
+     54,
+     58
+    ],
+    [
+     54,
+     58
+    ],
+    [
+     55,
+     58
+    ],
+    [
+     56,
+     58
+    ],
+    [
+     56,
+     59
+    ],
+    [
+     56,
+     60
+    ],
+    [
+     56,
+     61
+    ],
+    [
+     57,
+     61
+    ],
+    [
+     57,
+     62
+    ],
+    [
+     58,
+     62
+    ],
+    [
+     58,
+     63
+    ],
+    [
+     58,
+     63
+    ],
+    [
+     59,
+     63
+    ],
+    [
+     60,
+     63
+    ],
+    [
+     61,
+     63
+    ],
+    [
+     61,
+     64
+    ],
+    [
+     61,
+     65
+    ],
+    [
+     61,
+     66
+    ],
+    [
+     61,
+     67
+    ],
+    [
+     62,
+     67
+    ],
+    [
+     63,
+     67
+    ],
+    [
+     63,
+     68
+    ],
+    [
+     63,
+     68
+    ],
+    [
+     64,
+     68
+    ],
+    [
+     65,
+     68
+    ],
+    [
+     65,
+     69
+    ],
+    [
+     66,
+     69
+    ],
+    [
+     67,
+     69
+    ],
+    [
+     68,
+     69
+    ],
+    [
+     69,
+     69
+    ],
+    [
+     69,
+     70
+    ],
+    [
+     69,
+     71
+    ],
+    [
+     69,
+     72
+    ],
+    [
+     69,
+     73
+    ],
+    [
+     69,
+     74
+    ],
+    [
+     69,
+     75
+    ],
+    [
+     70,
+     75
+    ],
+    [
+     70,
+     76
+    ],
+    [
+     71,
+     76
+    ],
+    [
+     71,
+     76
+    ],
+    [
+     72,
+     76
+    ],
+    [
+     72,
+     77
+    ],
+    [
+     72,
+     78
+    ],
+    [
+     73,
+     78
+    ],
+    [
+     74,
+     78
+    ],
+    [
+     75,
+     78
+    ],
+    [
+     75,
+     78
+    ],
+    [
+     75,
+     79
+    ],
+    [
+     75,
+     80
+    ],
+    [
+     75,
+     81
+    ],
+    [
+     76,
+     81
+    ],
+    [
+     76,
+     81
+    ],
+    [
+     78,
+     81
+    ],
+    [
+     78,
+     81
+    ],
+    [
+     79,
+     82
+    ],
+    [
+     79,
+     82
+    ],
+    [
+     79,
+     82
+    ]
+   ],
+   "NYY": [
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     5,
+     1
+    ],
+    [
+     6,
+     1
+    ],
+    [
+     7,
+     1
+    ],
+    [
+     7,
+     2
+    ],
+    [
+     7,
+     2
+    ],
+    [
+     8,
+     2
+    ],
+    [
+     8,
+     3
+    ],
+    [
+     8,
+     4
+    ],
+    [
+     8,
+     5
+    ],
+    [
+     8,
+     6
+    ],
+    [
+     8,
+     7
+    ],
+    [
+     9,
+     7
+    ],
+    [
+     9,
+     8
+    ],
+    [
+     10,
+     8
+    ],
+    [
+     10,
+     9
+    ],
+    [
+     11,
+     9
+    ],
+    [
+     12,
+     9
+    ],
+    [
+     13,
+     9
+    ],
+    [
+     13,
+     9
+    ],
+    [
+     14,
+     9
+    ],
+    [
+     15,
+     9
+    ],
+    [
+     16,
+     9
+    ],
+    [
+     17,
+     9
+    ],
+    [
+     18,
+     9
+    ],
+    [
+     18,
+     10
+    ],
+    [
+     19,
+     10
+    ],
+    [
+     20,
+     10
+    ],
+    [
+     20,
+     11
+    ],
+    [
+     20,
+     11
+    ],
+    [
+     21,
+     11
+    ],
+    [
+     22,
+     11
+    ],
+    [
+     23,
+     11
+    ],
+    [
+     24,
+     11
+    ],
+    [
+     25,
+     11
+    ],
+    [
+     25,
+     12
+    ],
+    [
+     26,
+     12
+    ],
+    [
+     26,
+     13
+    ],
+    [
+     26,
+     14
+    ],
+    [
+     26,
+     15
+    ],
+    [
+     26,
+     16
+    ],
+    [
+     27,
+     16
+    ],
+    [
+     27,
+     17
+    ],
+    [
+     27,
+     17
+    ],
+    [
+     28,
+     17
+    ],
+    [
+     28,
+     18
+    ],
+    [
+     28,
+     19
+    ],
+    [
+     29,
+     19
+    ],
+    [
+     30,
+     19
+    ],
+    [
+     30,
+     20
+    ],
+    [
+     30,
+     21
+    ],
+    [
+     30,
+     22
+    ],
+    [
+     30,
+     22
+    ],
+    [
+     31,
+     22
+    ],
+    [
+     32,
+     22
+    ],
+    [
+     33,
+     22
+    ],
+    [
+     34,
+     22
+    ],
+    [
+     34,
+     22
+    ],
+    [
+     35,
+     22
+    ],
+    [
+     35,
+     23
+    ],
+    [
+     36,
+     23
+    ],
+    [
+     36,
+     23
+    ],
+    [
+     36,
+     24
+    ],
+    [
+     36,
+     25
+    ],
+    [
+     37,
+     25
+    ],
+    [
+     37,
+     26
+    ],
+    [
+     37,
+     26
+    ],
+    [
+     38,
+     26
+    ],
+    [
+     39,
+     26
+    ],
+    [
+     40,
+     26
+    ],
+    [
+     41,
+     26
+    ],
+    [
+     41,
+     26
+    ],
+    [
+     41,
+     27
+    ],
+    [
+     42,
+     27
+    ],
+    [
+     43,
+     27
+    ],
+    [
+     43,
+     27
+    ],
+    [
+     44,
+     27
+    ],
+    [
+     45,
+     27
+    ],
+    [
+     45,
+     28
+    ],
+    [
+     46,
+     28
+    ],
+    [
+     46,
+     29
+    ],
+    [
+     46,
+     30
+    ],
+    [
+     46,
+     31
+    ],
+    [
+     47,
+     31
+    ],
+    [
+     48,
+     31
+    ],
+    [
+     48,
+     32
+    ],
+    [
+     48,
+     33
+    ],
+    [
+     48,
+     34
+    ],
+    [
+     48,
+     35
+    ],
+    [
+     48,
+     36
+    ],
+    [
+     48,
+     37
+    ],
+    [
+     48,
+     38
+    ],
+    [
+     48,
+     38
+    ],
+    [
+     49,
+     38
+    ],
+    [
+     49,
+     39
+    ],
+    [
+     49,
+     40
+    ],
+    [
+     50,
+     40
+    ],
+    [
+     50,
+     41
+    ],
+    [
+     50,
+     42
+    ],
+    [
+     51,
+     42
+    ],
+    [
+     52,
+     42
+    ],
+    [
+     53,
+     42
+    ],
+    [
+     54,
+     42
+    ],
+    [
+     54,
+     43
+    ],
+    [
+     54,
+     43
+    ],
+    [
+     55,
+     44
+    ],
+    [
+     56,
+     44
+    ],
+    [
+     56,
+     44
+    ],
+    [
+     57,
+     45
+    ],
+    [
+     57,
+     45
+    ],
+    [
+     58,
+     45
+    ],
+    [
+     59,
+     45
+    ],
+    [
+     59,
+     46
+    ],
+    [
+     60,
+     46
+    ],
+    [
+     61,
+     46
+    ],
+    [
+     61,
+     47
+    ],
+    [
+     61,
+     48
+    ],
+    [
+     62,
+     48
+    ],
+    [
+     62,
+     49
+    ],
+    [
+     63,
+     49
+    ],
+    [
+     63,
+     50
+    ],
+    [
+     64,
+     50
+    ],
+    [
+     64,
+     51
+    ],
+    [
+     64,
+     51
+    ],
+    [
+     65,
+     51
+    ],
+    [
+     66,
+     51
+    ],
+    [
+     66,
+     52
+    ],
+    [
+     66,
+     52
+    ],
+    [
+     67,
+     52
+    ],
+    [
+     68,
+     52
+    ],
+    [
+     68,
+     53
+    ],
+    [
+     68,
+     54
+    ],
+    [
+     68,
+     55
+    ],
+    [
+     69,
+     55
+    ],
+    [
+     69,
+     55
+    ],
+    [
+     70,
+     55
+    ],
+    [
+     71,
+     55
+    ],
+    [
+     72,
+     55
+    ],
+    [
+     73,
+     55
+    ],
+    [
+     73,
+     56
+    ],
+    [
+     74,
+     56
+    ],
+    [
+     74,
+     56
+    ],
+    [
+     74,
+     57
+    ],
+    [
+     75,
+     57
+    ],
+    [
+     75,
+     58
+    ],
+    [
+     76,
+     58
+    ],
+    [
+     77,
+     59
+    ],
+    [
+     78,
+     59
+    ],
+    [
+     78,
+     60
+    ],
+    [
+     79,
+     60
+    ],
+    [
+     80,
+     60
+    ],
+    [
+     80,
+     60
+    ],
+    [
+     80,
+     61
+    ],
+    [
+     81,
+     61
+    ],
+    [
+     81,
+     62
+    ],
+    [
+     81,
+     62
+    ],
+    [
+     82,
+     62
+    ],
+    [
+     83,
+     62
+    ],
+    [
+     84,
+     62
+    ],
+    [
+     85,
+     62
+    ],
+    [
+     85,
+     63
+    ],
+    [
+     86,
+     63
+    ],
+    [
+     87,
+     63
+    ],
+    [
+     88,
+     63
+    ],
+    [
+     88,
+     64
+    ],
+    [
+     88,
+     64
+    ],
+    [
+     89,
+     64
+    ],
+    [
+     89,
+     65
+    ],
+    [
+     89,
+     66
+    ],
+    [
+     89,
+     66
+    ],
+    [
+     90,
+     67
+    ],
+    [
+     91,
+     67
+    ],
+    [
+     92,
+     67
+    ],
+    [
+     93,
+     68
+    ],
+    [
+     93,
+     68
+    ],
+    [
+     93,
+     68
+    ]
+   ],
+   "BOS": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     2,
+     6
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     2,
+     8
+    ],
+    [
+     3,
+     8
+    ],
+    [
+     4,
+     8
+    ],
+    [
+     4,
+     8
+    ],
+    [
+     4,
+     9
+    ],
+    [
+     5,
+     9
+    ],
+    [
+     6,
+     9
+    ],
+    [
+     6,
+     10
+    ],
+    [
+     6,
+     11
+    ],
+    [
+     7,
+     11
+    ],
+    [
+     7,
+     11
+    ],
+    [
+     8,
+     11
+    ],
+    [
+     8,
+     12
+    ],
+    [
+     8,
+     13
+    ],
+    [
+     9,
+     13
+    ],
+    [
+     9,
+     14
+    ],
+    [
+     9,
+     15
+    ],
+    [
+     9,
+     16
+    ],
+    [
+     9,
+     17
+    ],
+    [
+     10,
+     17
+    ],
+    [
+     11,
+     17
+    ],
+    [
+     12,
+     17
+    ],
+    [
+     12,
+     18
+    ],
+    [
+     12,
+     19
+    ],
+    [
+     12,
+     19
+    ],
+    [
+     13,
+     19
+    ],
+    [
+     13,
+     20
+    ],
+    [
+     13,
+     21
+    ],
+    [
+     14,
+     21
+    ],
+    [
+     15,
+     21
+    ],
+    [
+     16,
+     21
+    ],
+    [
+     16,
+     22
+    ],
+    [
+     17,
+     22
+    ],
+    [
+     17,
+     22
+    ],
+    [
+     17,
+     23
+    ],
+    [
+     17,
+     23
+    ],
+    [
+     17,
+     24
+    ],
+    [
+     18,
+     24
+    ],
+    [
+     18,
+     25
+    ],
+    [
+     18,
+     26
+    ],
+    [
+     19,
+     26
+    ],
+    [
+     19,
+     27
+    ],
+    [
+     20,
+     27
+    ],
+    [
+     21,
+     27
+    ],
+    [
+     22,
+     27
+    ],
+    [
+     22,
+     27
+    ],
+    [
+     22,
+     28
+    ],
+    [
+     22,
+     29
+    ],
+    [
+     22,
+     30
+    ],
+    [
+     22,
+     30
+    ],
+    [
+     22,
+     31
+    ],
+    [
+     23,
+     31
+    ],
+    [
+     23,
+     32
+    ],
+    [
+     23,
+     33
+    ],
+    [
+     24,
+     33
+    ],
+    [
+     25,
+     33
+    ],
+    [
+     25,
+     33
+    ],
+    [
+     25,
+     34
+    ],
+    [
+     26,
+     34
+    ],
+    [
+     26,
+     35
+    ],
+    [
+     27,
+     35
+    ],
+    [
+     27,
+     35
+    ],
+    [
+     27,
+     36
+    ],
+    [
+     27,
+     37
+    ],
+    [
+     27,
+     38
+    ],
+    [
+     27,
+     39
+    ],
+    [
+     27,
+     39
+    ],
+    [
+     28,
+     39
+    ],
+    [
+     29,
+     39
+    ],
+    [
+     29,
+     40
+    ],
+    [
+     29,
+     40
+    ],
+    [
+     29,
+     41
+    ],
+    [
+     29,
+     42
+    ],
+    [
+     29,
+     43
+    ],
+    [
+     30,
+     43
+    ],
+    [
+     31,
+     43
+    ],
+    [
+     31,
+     44
+    ],
+    [
+     31,
+     45
+    ],
+    [
+     32,
+     45
+    ],
+    [
+     32,
+     46
+    ],
+    [
+     33,
+     46
+    ],
+    [
+     34,
+     46
+    ],
+    [
+     35,
+     46
+    ],
+    [
+     36,
+     46
+    ],
+    [
+     37,
+     46
+    ],
+    [
+     37,
+     47
+    ],
+    [
+     37,
+     48
+    ],
+    [
+     37,
+     48
+    ],
+    [
+     38,
+     48
+    ],
+    [
+     39,
+     48
+    ],
+    [
+     40,
+     48
+    ],
+    [
+     40,
+     48
+    ],
+    [
+     41,
+     48
+    ],
+    [
+     42,
+     48
+    ],
+    [
+     43,
+     48
+    ],
+    [
+     44,
+     48
+    ],
+    [
+     45,
+     48
+    ],
+    [
+     46,
+     48
+    ],
+    [
+     48,
+     48
+    ],
+    [
+     49,
+     48
+    ],
+    [
+     50,
+     48
+    ],
+    [
+     51,
+     48
+    ],
+    [
+     51,
+     48
+    ],
+    [
+     52,
+     49
+    ],
+    [
+     52,
+     49
+    ],
+    [
+     53,
+     49
+    ],
+    [
+     53,
+     50
+    ],
+    [
+     54,
+     50
+    ],
+    [
+     55,
+     50
+    ],
+    [
+     55,
+     51
+    ],
+    [
+     56,
+     51
+    ],
+    [
+     57,
+     51
+    ],
+    [
+     58,
+     51
+    ],
+    [
+     59,
+     51
+    ],
+    [
+     60,
+     51
+    ],
+    [
+     60,
+     51
+    ],
+    [
+     61,
+     51
+    ],
+    [
+     62,
+     51
+    ],
+    [
+     63,
+     51
+    ],
+    [
+     64,
+     51
+    ],
+    [
+     64,
+     52
+    ],
+    [
+     64,
+     53
+    ],
+    [
+     64,
+     54
+    ],
+    [
+     64,
+     55
+    ],
+    [
+     64,
+     56
+    ],
+    [
+     65,
+     56
+    ],
+    [
+     65,
+     57
+    ],
+    [
+     66,
+     57
+    ],
+    [
+     66,
+     58
+    ],
+    [
+     67,
+     58
+    ],
+    [
+     68,
+     58
+    ],
+    [
+     68,
+     59
+    ],
+    [
+     68,
+     59
+    ],
+    [
+     69,
+     59
+    ],
+    [
+     70,
+     59
+    ],
+    [
+     71,
+     59
+    ],
+    [
+     72,
+     59
+    ],
+    [
+     73,
+     59
+    ],
+    [
+     73,
+     60
+    ],
+    [
+     73,
+     60
+    ],
+    [
+     73,
+     61
+    ],
+    [
+     74,
+     62
+    ],
+    [
+     74,
+     63
+    ],
+    [
+     75,
+     63
+    ],
+    [
+     75,
+     64
+    ],
+    [
+     75,
+     65
+    ],
+    [
+     76,
+     65
+    ],
+    [
+     77,
+     65
+    ],
+    [
+     78,
+     65
+    ],
+    [
+     79,
+     65
+    ],
+    [
+     80,
+     65
+    ],
+    [
+     80,
+     66
+    ],
+    [
+     80,
+     67
+    ],
+    [
+     80,
+     67
+    ],
+    [
+     80,
+     68
+    ],
+    [
+     81,
+     68
+    ],
+    [
+     82,
+     68
+    ],
+    [
+     82,
+     68
+    ],
+    [
+     82,
+     69
+    ],
+    [
+     82,
+     70
+    ],
+    [
+     83,
+     70
+    ],
+    [
+     84,
+     70
+    ],
+    [
+     84,
+     71
+    ],
+    [
+     84,
+     72
+    ],
+    [
+     84,
+     72
+    ],
+    [
+     84,
+     73
+    ],
+    [
+     85,
+     73
+    ],
+    [
+     85,
+     74
+    ],
+    [
+     87,
+     74
+    ],
+    [
+     87,
+     74
+    ],
+    [
+     87,
+     75
+    ]
+   ],
+   "TOR": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ],
+    [
+     3,
+     0
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     4,
+     3
+    ],
+    [
+     4,
+     4
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     4,
+     6
+    ],
+    [
+     4,
+     7
+    ],
+    [
+     5,
+     7
+    ],
+    [
+     5,
+     7
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     6,
+     8
+    ],
+    [
+     6,
+     9
+    ],
+    [
+     6,
+     9
+    ],
+    [
+     7,
+     9
+    ],
+    [
+     7,
+     10
+    ],
+    [
+     7,
+     11
+    ],
+    [
+     7,
+     12
+    ],
+    [
+     7,
+     13
+    ],
+    [
+     8,
+     13
+    ],
+    [
+     9,
+     13
+    ],
+    [
+     10,
+     13
+    ],
+    [
+     10,
+     14
+    ],
+    [
+     10,
+     14
+    ],
+    [
+     10,
+     15
+    ],
+    [
+     11,
+     15
+    ],
+    [
+     12,
+     15
+    ],
+    [
+     12,
+     16
+    ],
+    [
+     13,
+     16
+    ],
+    [
+     14,
+     16
+    ],
+    [
+     14,
+     17
+    ],
+    [
+     15,
+     17
+    ],
+    [
+     16,
+     17
+    ],
+    [
+     16,
+     18
+    ],
+    [
+     16,
+     19
+    ],
+    [
+     16,
+     20
+    ],
+    [
+     16,
+     21
+    ],
+    [
+     16,
+     21
+    ],
+    [
+     17,
+     21
+    ],
+    [
+     18,
+     21
+    ],
+    [
+     18,
+     22
+    ],
+    [
+     18,
+     23
+    ],
+    [
+     18,
+     24
+    ],
+    [
+     19,
+     24
+    ],
+    [
+     19,
+     24
+    ],
+    [
+     19,
+     25
+    ],
+    [
+     20,
+     25
+    ],
+    [
+     21,
+     25
+    ],
+    [
+     21,
+     26
+    ],
+    [
+     21,
+     27
+    ],
+    [
+     22,
+     27
+    ],
+    [
+     23,
+     27
+    ],
+    [
+     24,
+     27
+    ],
+    [
+     25,
+     27
+    ],
+    [
+     25,
+     28
+    ],
+    [
+     25,
+     29
+    ],
+    [
+     26,
+     29
+    ],
+    [
+     27,
+     29
+    ],
+    [
+     28,
+     29
+    ],
+    [
+     29,
+     29
+    ],
+    [
+     29,
+     30
+    ],
+    [
+     29,
+     31
+    ],
+    [
+     29,
+     31
+    ],
+    [
+     29,
+     32
+    ],
+    [
+     29,
+     33
+    ],
+    [
+     30,
+     33
+    ],
+    [
+     30,
+     34
+    ],
+    [
+     31,
+     34
+    ],
+    [
+     32,
+     34
+    ],
+    [
+     32,
+     35
+    ],
+    [
+     33,
+     35
+    ],
+    [
+     33,
+     36
+    ],
+    [
+     33,
+     36
+    ],
+    [
+     34,
+     36
+    ],
+    [
+     34,
+     37
+    ],
+    [
+     34,
+     38
+    ],
+    [
+     34,
+     38
+    ],
+    [
+     35,
+     38
+    ],
+    [
+     36,
+     38
+    ],
+    [
+     37,
+     38
+    ],
+    [
+     37,
+     39
+    ],
+    [
+     38,
+     39
+    ],
+    [
+     38,
+     39
+    ],
+    [
+     39,
+     39
+    ],
+    [
+     39,
+     40
+    ],
+    [
+     39,
+     41
+    ],
+    [
+     39,
+     42
+    ],
+    [
+     39,
+     43
+    ],
+    [
+     39,
+     44
+    ],
+    [
+     39,
+     45
+    ],
+    [
+     40,
+     45
+    ],
+    [
+     40,
+     46
+    ],
+    [
+     41,
+     46
+    ],
+    [
+     41,
+     46
+    ],
+    [
+     42,
+     46
+    ],
+    [
+     42,
+     47
+    ],
+    [
+     42,
+     48
+    ],
+    [
+     42,
+     49
+    ],
+    [
+     43,
+     49
+    ],
+    [
+     44,
+     49
+    ],
+    [
+     44,
+     49
+    ],
+    [
+     45,
+     49
+    ],
+    [
+     45,
+     50
+    ],
+    [
+     45,
+     51
+    ],
+    [
+     45,
+     52
+    ],
+    [
+     46,
+     52
+    ],
+    [
+     46,
+     53
+    ],
+    [
+     46,
+     54
+    ],
+    [
+     46,
+     55
+    ],
+    [
+     46,
+     56
+    ],
+    [
+     47,
+     56
+    ],
+    [
+     47,
+     57
+    ],
+    [
+     48,
+     57
+    ],
+    [
+     48,
+     58
+    ],
+    [
+     49,
+     58
+    ],
+    [
+     49,
+     59
+    ],
+    [
+     50,
+     59
+    ],
+    [
+     50,
+     59
+    ],
+    [
+     51,
+     59
+    ],
+    [
+     52,
+     59
+    ],
+    [
+     52,
+     60
+    ],
+    [
+     53,
+     60
+    ],
+    [
+     53,
+     61
+    ],
+    [
+     54,
+     61
+    ],
+    [
+     54,
+     62
+    ],
+    [
+     55,
+     62
+    ],
+    [
+     56,
+     62
+    ],
+    [
+     56,
+     63
+    ],
+    [
+     57,
+     63
+    ],
+    [
+     58,
+     63
+    ],
+    [
+     59,
+     63
+    ],
+    [
+     59,
+     64
+    ],
+    [
+     60,
+     64
+    ],
+    [
+     61,
+     64
+    ],
+    [
+     61,
+     65
+    ],
+    [
+     61,
+     65
+    ],
+    [
+     62,
+     65
+    ],
+    [
+     62,
+     66
+    ],
+    [
+     63,
+     66
+    ],
+    [
+     63,
+     67
+    ],
+    [
+     64,
+     67
+    ],
+    [
+     64,
+     68
+    ],
+    [
+     64,
+     68
+    ],
+    [
+     64,
+     69
+    ],
+    [
+     65,
+     69
+    ],
+    [
+     65,
+     70
+    ],
+    [
+     66,
+     70
+    ],
+    [
+     67,
+     70
+    ],
+    [
+     68,
+     70
+    ],
+    [
+     68,
+     70
+    ],
+    [
+     68,
+     71
+    ],
+    [
+     69,
+     71
+    ],
+    [
+     70,
+     71
+    ],
+    [
+     71,
+     71
+    ],
+    [
+     72,
+     71
+    ],
+    [
+     72,
+     72
+    ],
+    [
+     72,
+     73
+    ],
+    [
+     73,
+     73
+    ],
+    [
+     73,
+     74
+    ],
+    [
+     73,
+     74
+    ],
+    [
+     73,
+     75
+    ],
+    [
+     74,
+     75
+    ],
+    [
+     75,
+     75
+    ],
+    [
+     75,
+     76
+    ],
+    [
+     75,
+     77
+    ],
+    [
+     76,
+     77
+    ],
+    [
+     76,
+     77
+    ],
+    [
+     76,
+     78
+    ],
+    [
+     76,
+     79
+    ],
+    [
+     77,
+     79
+    ],
+    [
+     77,
+     80
+    ],
+    [
+     77,
+     80
+    ],
+    [
+     77,
+     82
+    ],
+    [
+     77,
+     82
+    ],
+    [
+     78,
+     82
+    ],
+    [
+     78,
+     83
+    ],
+    [
+     79,
+     83
+    ]
+   ],
+   "TB": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     5,
+     7
+    ],
+    [
+     5,
+     7
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     7,
+     7
+    ],
+    [
+     8,
+     7
+    ],
+    [
+     8,
+     7
+    ],
+    [
+     9,
+     7
+    ],
+    [
+     10,
+     7
+    ],
+    [
+     11,
+     7
+    ],
+    [
+     11,
+     8
+    ],
+    [
+     12,
+     8
+    ],
+    [
+     12,
+     9
+    ],
+    [
+     12,
+     10
+    ],
+    [
+     12,
+     11
+    ],
+    [
+     13,
+     11
+    ],
+    [
+     13,
+     11
+    ],
+    [
+     14,
+     11
+    ],
+    [
+     15,
+     11
+    ],
+    [
+     16,
+     11
+    ],
+    [
+     17,
+     11
+    ],
+    [
+     18,
+     11
+    ],
+    [
+     18,
+     12
+    ],
+    [
+     18,
+     12
+    ],
+    [
+     19,
+     12
+    ],
+    [
+     20,
+     12
+    ],
+    [
+     21,
+     12
+    ],
+    [
+     22,
+     12
+    ],
+    [
+     23,
+     12
+    ],
+    [
+     24,
+     12
+    ],
+    [
+     25,
+     12
+    ],
+    [
+     25,
+     13
+    ],
+    [
+     25,
+     13
+    ],
+    [
+     26,
+     13
+    ],
+    [
+     27,
+     13
+    ],
+    [
+     28,
+     13
+    ],
+    [
+     28,
+     14
+    ],
+    [
+     28,
+     14
+    ],
+    [
+     29,
+     14
+    ],
+    [
+     29,
+     15
+    ],
+    [
+     30,
+     15
+    ],
+    [
+     31,
+     15
+    ],
+    [
+     32,
+     15
+    ],
+    [
+     33,
+     15
+    ],
+    [
+     33,
+     15
+    ],
+    [
+     34,
+     15
+    ],
+    [
+     34,
+     15
+    ],
+    [
+     34,
+     16
+    ],
+    [
+     34,
+     17
+    ],
+    [
+     34,
+     18
+    ],
+    [
+     34,
+     19
+    ],
+    [
+     34,
+     19
+    ],
+    [
+     35,
+     19
+    ],
+    [
+     35,
+     20
+    ],
+    [
+     36,
+     20
+    ],
+    [
+     36,
+     21
+    ],
+    [
+     36,
+     22
+    ],
+    [
+     36,
+     23
+    ],
+    [
+     36,
+     23
+    ],
+    [
+     37,
+     23
+    ],
+    [
+     37,
+     24
+    ],
+    [
+     37,
+     25
+    ],
+    [
+     38,
+     25
+    ],
+    [
+     39,
+     25
+    ],
+    [
+     40,
+     25
+    ],
+    [
+     40,
+     25
+    ],
+    [
+     40,
+     26
+    ],
+    [
+     40,
+     27
+    ],
+    [
+     41,
+     27
+    ],
+    [
+     41,
+     28
+    ],
+    [
+     41,
+     29
+    ],
+    [
+     41,
+     30
+    ],
+    [
+     41,
+     30
+    ],
+    [
+     42,
+     30
+    ],
+    [
+     42,
+     31
+    ],
+    [
+     43,
+     31
+    ],
+    [
+     43,
+     32
+    ],
+    [
+     43,
+     33
+    ],
+    [
+     44,
+     33
+    ],
+    [
+     45,
+     33
+    ],
+    [
+     46,
+     33
+    ],
+    [
+     47,
+     33
+    ],
+    [
+     48,
+     33
+    ],
+    [
+     48,
+     33
+    ],
+    [
+     49,
+     33
+    ],
+    [
+     50,
+     33
+    ],
+    [
+     51,
+     33
+    ],
+    [
+     52,
+     33
+    ],
+    [
+     52,
+     34
+    ],
+    [
+     52,
+     35
+    ],
+    [
+     52,
+     36
+    ],
+    [
+     53,
+     36
+    ],
+    [
+     54,
+     36
+    ],
+    [
+     54,
+     37
+    ],
+    [
+     55,
+     37
+    ],
+    [
+     56,
+     37
+    ],
+    [
+     56,
+     38
+    ],
+    [
+     56,
+     40
+    ],
+    [
+     56,
+     41
+    ],
+    [
+     56,
+     42
+    ],
+    [
+     57,
+     42
+    ],
+    [
+     58,
+     42
+    ],
+    [
+     59,
+     42
+    ],
+    [
+     59,
+     43
+    ],
+    [
+     60,
+     43
+    ],
+    [
+     61,
+     43
+    ],
+    [
+     62,
+     43
+    ],
+    [
+     62,
+     43
+    ],
+    [
+     62,
+     44
+    ],
+    [
+     63,
+     44
+    ],
+    [
+     64,
+     44
+    ],
+    [
+     64,
+     45
+    ],
+    [
+     65,
+     45
+    ],
+    [
+     65,
+     46
+    ],
+    [
+     66,
+     46
+    ],
+    [
+     67,
+     46
+    ],
+    [
+     68,
+     46
+    ],
+    [
+     68,
+     46
+    ],
+    [
+     69,
+     46
+    ],
+    [
+     70,
+     46
+    ],
+    [
+     71,
+     46
+    ],
+    [
+     72,
+     46
+    ],
+    [
+     73,
+     46
+    ],
+    [
+     74,
+     46
+    ],
+    [
+     74,
+     46
+    ],
+    [
+     74,
+     47
+    ],
+    [
+     74,
+     48
+    ],
+    [
+     74,
+     49
+    ],
+    [
+     75,
+     49
+    ],
+    [
+     75,
+     50
+    ],
+    [
+     76,
+     50
+    ],
+    [
+     76,
+     51
+    ],
+    [
+     76,
+     52
+    ],
+    [
+     76,
+     53
+    ],
+    [
+     77,
+     53
+    ],
+    [
+     78,
+     53
+    ],
+    [
+     78,
+     54
+    ],
+    [
+     79,
+     54
+    ],
+    [
+     79,
+     54
+    ],
+    [
+     80,
+     54
+    ],
+    [
+     81,
+     54
+    ],
+    [
+     82,
+     54
+    ],
+    [
+     82,
+     55
+    ],
+    [
+     83,
+     55
+    ],
+    [
+     83,
+     56
+    ],
+    [
+     83,
+     57
+    ],
+    [
+     84,
+     57
+    ],
+    [
+     85,
+     57
+    ],
+    [
+     85,
+     58
+    ],
+    [
+     85,
+     58
+    ],
+    [
+     86,
+     58
+    ],
+    [
+     87,
+     58
+    ],
+    [
+     87,
+     59
+    ],
+    [
+     88,
+     59
+    ],
+    [
+     89,
+     59
+    ],
+    [
+     90,
+     59
+    ],
+    [
+     90,
+     59
+    ],
+    [
+     91,
+     59
+    ],
+    [
+     92,
+     59
+    ],
+    [
+     93,
+     59
+    ],
+    [
+     93,
+     60
+    ],
+    [
+     94,
+     60
+    ],
+    [
+     95,
+     60
+    ],
+    [
+     95,
+     60
+    ],
+    [
+     96,
+     61
+    ],
+    [
+     96,
+     62
+    ],
+    [
+     96,
+     63
+    ],
+    [
+     97,
+     63
+    ],
+    [
+     98,
+     63
+    ],
+    [
+     98,
+     64
+    ]
+   ]
+  },
+  "gb": {
+   "BAL": [
+    0.5,
+    0.0,
+    0.5,
+    1.5,
+    1.0,
+    1.0,
+    2.0,
+    2.0,
+    3.0,
+    4.0,
+    4.0,
+    3.5,
+    3.5,
+    2.5,
+    2.0,
+    2.0,
+    1.0,
+    0.0,
+    0.0,
+    0.5,
+    1.5,
+    2.5,
+    1.5,
+    2.5,
+    3.0,
+    2.5,
+    3.5,
+    3.5,
+    4.0,
+    4.0,
+    5.0,
+    5.0,
+    5.5,
+    5.5,
+    5.0,
+    5.0,
+    6.0,
+    7.0,
+    8.0,
+    9.0,
+    9.0,
+    8.0,
+    9.0,
+    9.0,
+    9.0,
+    9.0,
+    9.0,
+    10.0,
+    9.0,
+    9.0,
+    10.0,
+    10.0,
+    10.0,
+    11.0,
+    12.0,
+    13.0,
+    13.0,
+    13.0,
+    13.0,
+    12.5,
+    11.5,
+    10.5,
+    9.5,
+    10.0,
+    11.0,
+    10.0,
+    10.0,
+    9.5,
+    8.5,
+    8.5,
+    8.0,
+    8.0,
+    8.0,
+    8.0,
+    9.0,
+    10.0,
+    10.0,
+    9.5,
+    8.5,
+    9.5,
+    10.5,
+    10.5,
+    11.5,
+    11.5,
+    11.5,
+    12.5,
+    11.5,
+    10.5,
+    9.5,
+    10.5,
+    11.5,
+    11.0,
+    10.0,
+    10.0,
+    11.0,
+    11.5,
+    12.5,
+    12.5,
+    13.0,
+    13.0,
+    12.0,
+    12.0,
+    11.5,
+    12.5,
+    13.5,
+    12.5,
+    12.5,
+    12.5,
+    11.5,
+    10.0,
+    9.0,
+    8.0,
+    9.0,
+    9.5,
+    10.0,
+    9.5,
+    10.5,
+    10.5,
+    11.5,
+    11.0,
+    11.0,
+    11.0,
+    11.5,
+    10.5,
+    11.5,
+    11.5,
+    12.0,
+    12.0,
+    12.0,
+    12.5,
+    13.5,
+    14.5,
+    14.5,
+    15.5,
+    15.5,
+    16.5,
+    16.5,
+    15.5,
+    14.5,
+    13.5,
+    14.5,
+    14.5,
+    15.5,
+    15.5,
+    14.5,
+    13.5,
+    14.5,
+    15.0,
+    14.0,
+    14.0,
+    14.5,
+    14.5,
+    14.5,
+    14.5,
+    13.5,
+    14.5,
+    14.5,
+    14.5,
+    15.5,
+    16.5,
+    16.5,
+    16.0,
+    17.0,
+    17.0,
+    16.5,
+    16.5,
+    17.5,
+    18.5,
+    18.0,
+    18.0,
+    18.0,
+    18.5,
+    18.5,
+    19.5,
+    20.5,
+    20.0,
+    20.0,
+    18.5,
+    18.0,
+    18.5,
+    19.0,
+    18.5
+   ],
+   "NYY": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.5,
+    0.5,
+    1.5,
+    0.5,
+    0.5,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    2.0,
+    2.0,
+    2.0,
+    2.0,
+    2.0,
+    2.0,
+    3.0,
+    3.0,
+    3.0,
+    4.0,
+    4.5,
+    5.5,
+    5.5,
+    4.5,
+    3.5,
+    2.5,
+    1.5,
+    1.5,
+    1.5,
+    1.5,
+    1.5,
+    1.0,
+    1.0,
+    1.0,
+    0.5,
+    1.5,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    1.5,
+    2.5,
+    3.5,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    3.0,
+    4.0,
+    5.0,
+    4.0,
+    4.0,
+    4.0,
+    3.0,
+    2.5,
+    2.0,
+    1.5,
+    1.5,
+    2.0,
+    2.5,
+    2.0,
+    2.0,
+    2.0,
+    3.0,
+    2.5,
+    1.5,
+    2.5,
+    3.5,
+    2.5,
+    3.5,
+    2.5,
+    3.5,
+    3.5,
+    4.5,
+    4.5,
+    4.5,
+    4.5,
+    5.5,
+    6.0,
+    6.0,
+    6.0,
+    6.5,
+    6.5,
+    6.5,
+    5.5,
+    6.0,
+    5.0,
+    5.0,
+    4.0,
+    3.0,
+    3.0,
+    3.0,
+    3.5,
+    3.5,
+    3.5,
+    4.0,
+    4.0,
+    4.5,
+    4.5,
+    4.5,
+    4.5,
+    3.5,
+    3.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    3.0,
+    3.0,
+    4.0,
+    4.0,
+    3.5,
+    3.5,
+    4.5,
+    5.0,
+    4.0,
+    5.0,
+    6.0,
+    6.0,
+    6.0,
+    5.0,
+    4.0,
+    4.5,
+    5.0,
+    4.5
+   ],
+   "BOS": [
+    0.5,
+    0.0,
+    0.5,
+    1.5,
+    2.0,
+    2.0,
+    3.0,
+    4.0,
+    4.0,
+    5.0,
+    5.0,
+    5.5,
+    5.5,
+    4.5,
+    4.0,
+    4.0,
+    3.0,
+    2.0,
+    3.0,
+    3.5,
+    3.5,
+    4.0,
+    3.0,
+    4.0,
+    4.5,
+    4.0,
+    5.0,
+    6.0,
+    7.0,
+    8.0,
+    8.0,
+    7.0,
+    7.0,
+    8.0,
+    8.0,
+    8.0,
+    8.0,
+    9.0,
+    10.0,
+    10.0,
+    10.0,
+    9.0,
+    10.0,
+    9.0,
+    8.5,
+    9.5,
+    10.0,
+    11.0,
+    10.0,
+    10.5,
+    11.5,
+    10.5,
+    11.5,
+    11.5,
+    11.5,
+    11.5,
+    11.5,
+    12.5,
+    13.0,
+    13.0,
+    12.5,
+    12.5,
+    11.5,
+    12.0,
+    13.0,
+    12.0,
+    12.0,
+    11.5,
+    11.5,
+    10.5,
+    11.0,
+    11.0,
+    10.5,
+    10.5,
+    11.5,
+    12.5,
+    13.5,
+    13.5,
+    12.5,
+    12.5,
+    13.5,
+    13.5,
+    14.5,
+    15.5,
+    15.5,
+    15.5,
+    14.5,
+    14.5,
+    14.5,
+    14.5,
+    15.5,
+    14.5,
+    13.5,
+    12.5,
+    12.5,
+    12.0,
+    13.0,
+    14.0,
+    14.5,
+    14.5,
+    13.5,
+    12.5,
+    12.0,
+    12.0,
+    12.0,
+    11.0,
+    11.0,
+    11.0,
+    10.0,
+    8.0,
+    7.0,
+    6.0,
+    6.0,
+    6.5,
+    7.0,
+    6.5,
+    6.5,
+    7.5,
+    7.5,
+    7.0,
+    7.0,
+    7.0,
+    7.0,
+    6.0,
+    6.0,
+    5.0,
+    5.5,
+    5.5,
+    5.5,
+    5.0,
+    5.0,
+    6.0,
+    7.0,
+    8.0,
+    9.0,
+    10.0,
+    9.5,
+    9.5,
+    8.5,
+    8.5,
+    8.5,
+    7.5,
+    8.5,
+    8.0,
+    7.0,
+    6.0,
+    6.0,
+    6.0,
+    5.0,
+    6.0,
+    6.0,
+    7.0,
+    7.5,
+    8.5,
+    7.5,
+    8.5,
+    8.5,
+    7.5,
+    7.5,
+    7.5,
+    6.5,
+    6.0,
+    7.0,
+    8.0,
+    7.5,
+    8.5,
+    8.5,
+    8.5,
+    8.5,
+    9.5,
+    10.5,
+    10.5,
+    9.5,
+    10.5,
+    11.5,
+    11.5,
+    12.0,
+    11.0,
+    11.0,
+    10.5,
+    11.0,
+    11.0
+   ],
+   "TOR": [
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    2.0,
+    3.0,
+    3.0,
+    3.5,
+    4.5,
+    3.5,
+    3.0,
+    2.0,
+    2.0,
+    2.0,
+    2.5,
+    2.0,
+    3.0,
+    4.0,
+    4.0,
+    5.0,
+    4.5,
+    4.0,
+    4.0,
+    5.0,
+    5.5,
+    6.5,
+    6.5,
+    5.5,
+    6.5,
+    6.5,
+    5.5,
+    6.0,
+    6.0,
+    6.0,
+    7.0,
+    8.0,
+    9.0,
+    9.0,
+    9.5,
+    8.5,
+    7.5,
+    8.5,
+    9.5,
+    10.5,
+    9.5,
+    9.5,
+    10.5,
+    9.5,
+    9.5,
+    10.5,
+    11.5,
+    11.5,
+    11.0,
+    11.0,
+    10.5,
+    10.5,
+    10.5,
+    9.5,
+    8.5,
+    8.0,
+    8.0,
+    8.0,
+    9.0,
+    8.5,
+    8.5,
+    8.5,
+    8.0,
+    9.0,
+    8.0,
+    7.0,
+    8.0,
+    8.0,
+    9.0,
+    9.0,
+    8.0,
+    9.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0,
+    9.0,
+    10.0,
+    9.0,
+    8.5,
+    7.5,
+    8.5,
+    9.5,
+    9.5,
+    9.5,
+    9.5,
+    10.5,
+    10.0,
+    11.0,
+    11.0,
+    11.5,
+    11.5,
+    11.5,
+    11.5,
+    11.5,
+    11.5,
+    11.5,
+    11.0,
+    11.0,
+    12.0,
+    12.0,
+    11.5,
+    10.5,
+    10.5,
+    11.5,
+    12.5,
+    13.5,
+    12.5,
+    13.5,
+    13.5,
+    14.5,
+    14.0,
+    14.0,
+    14.0,
+    14.5,
+    13.5,
+    13.5,
+    13.5,
+    13.5,
+    14.5,
+    14.5,
+    15.0,
+    15.0,
+    15.0,
+    16.0,
+    16.0,
+    16.0,
+    16.0,
+    16.5,
+    15.5,
+    14.5,
+    14.5,
+    15.0,
+    14.0,
+    15.0,
+    14.0,
+    14.0,
+    13.0,
+    14.0,
+    14.5,
+    14.5,
+    14.5,
+    15.0,
+    15.0,
+    15.0,
+    15.0,
+    14.5,
+    15.5,
+    14.5,
+    13.5,
+    13.5,
+    13.5,
+    13.5,
+    14.0,
+    14.0,
+    15.0,
+    14.5,
+    15.5,
+    15.5,
+    15.5,
+    16.0,
+    17.0,
+    17.0,
+    17.5,
+    17.5,
+    18.5,
+    18.5,
+    19.0,
+    19.0,
+    19.5,
+    19.0,
+    19.0,
+    20.0,
+    19.0
+   ],
+   "TB": [
+    0.5,
+    1.0,
+    1.5,
+    2.5,
+    2.0,
+    1.0,
+    2.0,
+    3.0,
+    4.0,
+    4.0,
+    3.0,
+    2.5,
+    3.5,
+    3.5,
+    3.0,
+    2.0,
+    1.0,
+    0.0,
+    0.5,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.5,
+    1.0,
+    2.0,
+    2.0,
+    2.5,
+    2.5,
+    2.5,
+    1.5,
+    1.5,
+    1.5,
+    1.5,
+    1.5,
+    1.5,
+    1.5,
+    1.5,
+    1.5,
+    1.5,
+    0.5,
+    0.5,
+    0.5,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    1.0,
+    1.5,
+    2.5,
+    3.5,
+    3.0,
+    3.0,
+    3.0,
+    2.0,
+    2.0,
+    3.0,
+    3.0,
+    2.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "bal_days_tied_or_first": 3
+ },
+ "standings": [
+  {
+   "team": "TB",
+   "name": "Rays",
+   "w": 98,
+   "l": 64,
+   "pct": ".605",
+   "gb": "-",
+   "rs": 736,
+   "ra": 650,
+   "clinch": "z",
+   "rank": 1,
+   "wc_rank": null,
+   "wc_gb": "-"
+  },
+  {
+   "team": "NYY",
+   "name": "Yankees",
+   "w": 93,
+   "l": 68,
+   "pct": ".578",
+   "gb": "4.5",
+   "rs": 739,
+   "ra": 601,
+   "clinch": "w",
+   "rank": 2,
+   "wc_rank": "1",
+   "wc_gb": "+9.5"
+  },
+  {
+   "team": "BOS",
+   "name": "Red Sox",
+   "w": 87,
+   "l": 75,
+   "pct": ".537",
+   "gb": "11.0",
+   "rs": 689,
+   "ra": 611,
+   "clinch": "w",
+   "rank": 3,
+   "wc_rank": "2",
+   "wc_gb": "+3.0"
+  },
+  {
+   "team": "BAL",
+   "name": "Orioles",
+   "w": 79,
+   "l": 82,
+   "pct": ".491",
+   "gb": "18.5",
+   "rs": 718,
+   "ra": 739,
+   "clinch": null,
+   "rank": 4,
+   "wc_rank": "5",
+   "wc_gb": "4.5"
+  },
+  {
+   "team": "TOR",
+   "name": "Blue Jays",
+   "w": 79,
+   "l": 83,
+   "pct": ".488",
+   "gb": "19.0",
+   "rs": 648,
+   "ra": 694,
+   "clinch": null,
+   "rank": 5,
+   "wc_rank": "6",
+   "wc_gb": "5.0"
+  }
+ ],
+ "leaders": {
+  "batting": [
+   {
+    "stat": "HR",
+    "list": [
+     {
+      "id": 624413,
+      "name": "Pete Alonso",
+      "val": 43
+     },
+     {
+      "id": 691723,
+      "name": "Coby Mayo",
+      "val": 24
+     },
+     {
+      "id": 683002,
+      "name": "Gunnar Henderson",
+      "val": 24
+     }
+    ]
+   },
+   {
+    "stat": "RBI",
+    "list": [
+     {
+      "id": 624413,
+      "name": "Pete Alonso",
+      "val": 113
+     },
+     {
+      "id": 691723,
+      "name": "Coby Mayo",
+      "val": 63
+     },
+     {
+      "id": 683002,
+      "name": "Gunnar Henderson",
+      "val": 59
+     }
+    ]
+   },
+   {
+    "stat": "AVG",
+    "note": "min 499 PA",
+    "list": [
+     {
+      "id": 624413,
+      "name": "Pete Alonso",
+      "val": ".267"
+     },
+     {
+      "id": 621493,
+      "name": "Taylor Ward",
+      "val": ".246"
+     },
+     {
+      "id": 683002,
+      "name": "Gunnar Henderson",
+      "val": ".225"
+     }
+    ]
+   },
+   {
+    "stat": "OPS",
+    "note": "min 499 PA",
+    "list": [
+     {
+      "id": 624413,
+      "name": "Pete Alonso",
+      "val": ".885"
+     },
+     {
+      "id": 621493,
+      "name": "Taylor Ward",
+      "val": ".729"
+     },
+     {
+      "id": 683002,
+      "name": "Gunnar Henderson",
+      "val": ".712"
+     }
+    ]
+   },
+   {
+    "stat": "H",
+    "list": [
+     {
+      "id": 624413,
+      "name": "Pete Alonso",
+      "val": 161
+     },
+     {
+      "id": 683002,
+      "name": "Gunnar Henderson",
+      "val": 140
+     },
+     {
+      "id": 621493,
+      "name": "Taylor Ward",
+      "val": 101
+     }
+    ]
+   },
+   {
+    "stat": "R",
+    "list": [
+     {
+      "id": 624413,
+      "name": "Pete Alonso",
+      "val": 100
+     },
+     {
+      "id": 683002,
+      "name": "Gunnar Henderson",
+      "val": 88
+     },
+     {
+      "id": 621493,
+      "name": "Taylor Ward",
+      "val": 64
+     }
+    ]
+   },
+   {
+    "stat": "SB",
+    "list": [
+     {
+      "id": 665750,
+      "name": "Leody Taveras",
+      "val": 11
+     },
+     {
+      "id": 677942,
+      "name": "Blaze Alexander",
+      "val": 10
+     },
+     {
+      "id": 681297,
+      "name": "Colton Cowser",
+      "val": 10
+     }
+    ]
+   },
+   {
+    "stat": "BB",
+    "list": [
+     {
+      "id": 621493,
+      "name": "Taylor Ward",
+      "val": 87
+     },
+     {
+      "id": 624413,
+      "name": "Pete Alonso",
+      "val": 81
+     },
+     {
+      "id": 683002,
+      "name": "Gunnar Henderson",
+      "val": 67
+     }
+    ]
+   }
+  ],
+  "pitching": [
+   {
+    "stat": "ERA",
+    "note": "min 161 IP",
+    "list": [
+     {
+      "id": 669432,
+      "name": "Trevor Rogers",
+      "val": "4.03"
+     },
+     {
+      "id": 669358,
+      "name": "Shane Baz",
+      "val": "4.11"
+     }
+    ]
+   },
+   {
+    "stat": "W",
+    "list": [
+     {
+      "id": 669432,
+      "name": "Trevor Rogers",
+      "val": 10
+     },
+     {
+      "id": 687064,
+      "name": "Brandon Young",
+      "val": 9
+     },
+     {
+      "id": 605135,
+      "name": "Chris Bassitt",
+      "val": 9
+     }
+    ]
+   },
+   {
+    "stat": "SO",
+    "list": [
+     {
+      "id": 669432,
+      "name": "Trevor Rogers",
+      "val": 157
+     },
+     {
+      "id": 669358,
+      "name": "Shane Baz",
+      "val": 154
+     },
+     {
+      "id": 680694,
+      "name": "Kyle Bradish",
+      "val": 142
+     }
+    ]
+   },
+   {
+    "stat": "IP",
+    "list": [
+     {
+      "id": 669358,
+      "name": "Shane Baz",
+      "val": "179.2"
+     },
+     {
+      "id": 669432,
+      "name": "Trevor Rogers",
+      "val": "169.2"
+     },
+     {
+      "id": 687064,
+      "name": "Brandon Young",
+      "val": "156.2"
+     }
+    ]
+   },
+   {
+    "stat": "WHIP",
+    "note": "min 161 IP",
+    "list": [
+     {
+      "id": 669432,
+      "name": "Trevor Rogers",
+      "val": "1.18"
+     },
+     {
+      "id": 669358,
+      "name": "Shane Baz",
+      "val": "1.35"
+     }
+    ]
+   },
+   {
+    "stat": "SV",
+    "list": [
+     {
+      "id": 552640,
+      "name": "Andrew Kittredge",
+      "val": 11
+     },
+     {
+      "id": 670329,
+      "name": "Rico Garcia",
+      "val": 10
+     },
+     {
+      "id": 664854,
+      "name": "Ryan Helsley",
+      "val": 8
+     }
+    ]
+   },
+   {
+    "stat": "HLD",
+    "list": [
+     {
+      "id": 670329,
+      "name": "Rico Garcia",
+      "val": 19
+     },
+     {
+      "id": 666974,
+      "name": "Yennier Cano",
+      "val": 14
+     },
+     {
+      "id": 664991,
+      "name": "Grant Wolfram",
+      "val": 13
+     }
+    ]
+   },
+   {
+    "stat": "ERA (relief, 40+ IP)",
+    "list": [
+     {
+      "id": 669330,
+      "name": "Tyler Wells",
+      "val": "2.67"
+     },
+     {
+      "id": 666974,
+      "name": "Yennier Cano",
+      "val": "2.90"
+     },
+     {
+      "id": 670329,
+      "name": "Rico Garcia",
+      "val": "3.09"
+     }
+    ]
+   }
+  ]
+ },
+ "players": {
+  "677942": {
+   "bat": ".303/.358/.414, 4 HR, 31 RBI in 289 PA"
+  },
+  "663624": {
+   "bat": ".286/.333/.357, 0 HR, 1 RBI in 15 PA"
+  },
+  "687952": {
+   "bat": ".277/.325/.513, 11 HR, 39 RBI in 213 PA"
+  },
+  "624413": {
+   "bat": ".267/.363/.522, 43 HR, 113 RBI in 700 PA"
+  },
+  "650968": {
+   "bat": ".259/.276/.370, 1 HR, 2 RBI in 29 PA"
+  },
+  "668939": {
+   "bat": ".251/.331/.433, 8 HR, 47 RBI in 284 PA"
+  },
+  "621493": {
+   "bat": ".246/.383/.346, 7 HR, 30 RBI in 506 PA"
+  },
+  "642215": {
+   "bat": ".231/.348/.333, 1 HR, 3 RBI in 46 PA",
+   "pit": "0-0, 15.43 ERA, 0 K in 2.1 IP"
+  },
+  "702616": {
+   "bat": ".229/.300/.340, 7 HR, 30 RBI in 354 PA"
+  },
+  "687637": {
+   "bat": ".228/.307/.373, 9 HR, 44 RBI in 363 PA"
+  },
+  "691723": {
+   "bat": ".228/.297/.461, 24 HR, 63 RBI in 454 PA"
+  },
+  "681297": {
+   "bat": ".226/.317/.370, 13 HR, 40 RBI in 392 PA"
+  },
+  "683002": {
+   "bat": ".225/.309/.403, 24 HR, 59 RBI in 702 PA"
+  },
+  "694212": {
+   "bat": ".222/.291/.406, 18 HR, 54 RBI in 399 PA"
+  },
+  "665750": {
+   "bat": ".219/.288/.345, 8 HR, 56 RBI in 482 PA"
+  },
+  "669236": {
+   "bat": ".217/.247/.365, 10 HR, 45 RBI in 293 PA"
+  },
+  "641933": {
+   "bat": ".212/.300/.377, 10 HR, 23 RBI in 260 PA"
+  },
+  "677008": {
+   "bat": ".211/.211/.263, 0 HR, 2 RBI in 19 PA"
+  },
+  "668670": {
+   "bat": ".200/.333/.200, 0 HR, 0 RBI in 6 PA"
+  },
+  "673357": {
+   "bat": ".182/.250/.545, 1 HR, 3 RBI in 12 PA"
+  },
+  "671286": {
+   "bat": ".182/.333/.273, 0 HR, 2 RBI in 15 PA"
+  },
+  "681047": {
+   "bat": ".180/.305/.220, 0 HR, 1 RBI in 59 PA"
+  },
+  "677956": {
+   "bat": ".179/.273/.250, 0 HR, 1 RBI in 33 PA"
+  },
+  "676480": {
+   "bat": ".167/.167/.167, 0 HR, 0 RBI in 6 PA"
+  },
+  "644433": {
+   "bat": ".125/.125/.125, 0 HR, 1 RBI in 24 PA",
+   "pit": "0-0, 18.00 ERA, 0 K in 1.0 IP"
+  },
+  "669087": {
+   "bat": ".121/.147/.182, 0 HR, 1 RBI in 34 PA"
+  },
+  "665966": {
+   "bat": ".104/.198/.117, 0 HR, 0 RBI in 88 PA"
+  },
+  "680694": {
+   "bat": ".000/.000/.000, 0 HR, 0 RBI in 0 PA",
+   "pit": "7-14, 4.12 ERA, 142 K in 155.0 IP"
+  },
+  "670329": {
+   "bat": ".000/.000/.000, 0 HR, 0 RBI in 0 PA",
+   "pit": "5-1, 3.09 ERA, 68 K in 67.0 IP"
+  },
+  "668974": {
+   "bat": ".000/.000/.000, 0 HR, 0 RBI in 1 PA"
+  },
+  "672279": {
+   "bat": ".000/.000/.000, 0 HR, 0 RBI in 1 PA"
+  },
+  "676679": {
+   "bat": ".000/.000/.000, 0 HR, 0 RBI in 0 PA"
+  },
+  "664744": {
+   "pit": "0-0, 0.00 ERA, 0 K in 1.0 IP"
+  },
+  "687721": {
+   "pit": "0-0, 0.00 ERA, 1 K in 1.0 IP"
+  },
+  "695380": {
+   "pit": "1-0, 1.84 ERA, 13 K in 14.2 IP"
+  },
+  "801725": {
+   "pit": "0-2, 1.93 ERA, 6 K in 9.1 IP"
+  },
+  "677020": {
+   "pit": "1-0, 2.08 ERA, 29 K in 30.1 IP"
+  },
+  "621107": {
+   "pit": "0-0, 2.45 ERA, 7 K in 3.2 IP"
+  },
+  "669330": {
+   "pit": "2-2, 2.67 ERA, 53 K in 54.0 IP"
+  },
+  "676742": {
+   "pit": "1-1, 2.70 ERA, 27 K in 20.0 IP"
+  },
+  "666974": {
+   "pit": "4-3, 2.90 ERA, 45 K in 49.2 IP"
+  },
+  "552640": {
+   "pit": "3-3, 3.54 ERA, 40 K in 48.1 IP"
+  },
+  "687064": {
+   "pit": "9-6, 3.56 ERA, 133 K in 156.2 IP"
+  },
+  "544150": {
+   "pit": "3-0, 3.86 ERA, 46 K in 63.0 IP"
+  },
+  "608650": {
+   "pit": "3-0, 3.94 ERA, 13 K in 16.0 IP"
+  },
+  "669432": {
+   "pit": "10-11, 4.03 ERA, 157 K in 169.2 IP"
+  },
+  "689296": {
+   "pit": "3-2, 4.07 ERA, 66 K in 59.2 IP"
+  },
+  "669358": {
+   "pit": "6-15, 4.11 ERA, 154 K in 179.2 IP"
+  },
+  "664854": {
+   "pit": "0-4, 4.11 ERA, 21 K in 15.1 IP"
+  },
+  "664991": {
+   "pit": "6-4, 4.30 ERA, 61 K in 52.1 IP"
+  },
+  "700249": {
+   "pit": "2-1, 4.38 ERA, 28 K in 37.0 IP"
+  },
+  "605135": {
+   "pit": "9-5, 4.41 ERA, 74 K in 102.0 IP"
+  },
+  "669211": {
+   "pit": "0-1, 5.68 ERA, 17 K in 25.1 IP"
+  },
+  "694346": {
+   "pit": "2-3, 6.13 ERA, 37 K in 39.2 IP"
+  },
+  "665152": {
+   "pit": "1-4, 6.50 ERA, 38 K in 36.0 IP"
+  },
+  "675919": {
+   "pit": "0-0, 7.36 ERA, 1 K in 3.2 IP"
+  },
+  "682274": {
+   "pit": "1-0, 8.68 ERA, 13 K in 9.1 IP"
+  },
+  "671382": {
+   "pit": "0-0, 9.00 ERA, 9 K in 9.0 IP"
+  },
+  "642585": {
+   "pit": "0-0, 16.20 ERA, 3 K in 1.2 IP"
+  },
+  "642152": {
+   "pit": "0-0, 18.00 ERA, 3 K in 3.0 IP"
+  }
+ },
+ "team": {
+  "avg": ".234",
+  "obp": ".314",
+  "slg": ".396",
+  "ops": ".710",
+  "hr": 199,
+  "sb": 78,
+  "runs": 718,
+  "era": "4.07",
+  "whip": "1.34",
+  "k": 1305,
+  "sv": 46,
+  "ra": 739
+ },
+ "summary": "The Orioles finished 2026 at 79-82 (.491), fourth in the AL East, 18.5 games behind the division-champion Rays, and missed the postseason, finishing 4.5 games out of the last AL Wild Card spot. They scored 718 runs and allowed 739 (a -21 run differential, which projects to about 78-83 by the Pythagorean formula). The high-water mark came on Apr 13 at 9-7 (+2 vs .500); the low point was 39-48 on Jun 30, and they were still at .500 (69-69) as late as Aug 31. July was the best month (15-8) and June the worst (11-16). The longest winning streak was 7 games (Jul 9\u2013Jul 19) and the longest skid 6 (Sep 1\u2013Sep 6). They went 18-24 in one-run games, 39-42 at home and 40-40 on the road. Pete Alonso led the club with 43 home runs and 113 RBI; Trevor Rogers posted the best qualified ERA (4.03) and led the staff with 157 strikeouts, and Andrew Kittredge led in saves (11).",
+ "research": {
+  "label": "Offseason board from on-disk /workspace/ij_* research only \u2014 not MLB Stats API. Gaps labeled.",
+  "generated": "2026-10-10T13:36:19-04:00",
+  "generatedNote": "Sat Oct 10, 2026 afternoon remaster. Bullets paraphrased from Interest Journal research files; standings/stats on the wall come only from data/*.json (MLB Stats API, fetched Oct 7).",
+  "sections": [
+   {
+    "file": "ij_2026-10-07_research.md",
+    "date": "2026-10-07",
+    "heading": "Layoffs follow-up \u00b7 GM search",
+    "bullets": [
+     "Layoffs follow-up: The Athletic (via Camden Chat) puts the business-side cuts at **24+ people**, including the performers behind **the Oriole Bird and Mr. Splash**. Also cut: the team photographer and people in ticket sales, graphic design and food & beverage. No official reason has been given.",
+     "GM search: Interviews are ramping up this week, though **no names yet**. The pool includes up-and-coming player-development leaders from other organizations and at least one candidate with both MLB playing and executive experience. The O's could hire more than one executive. The lockout looms Dec 1."
+    ],
+    "urls": [
+     "https://www.camdenchat.com/orioles-news-links/71261/orioles-news-organization-lays-off-dozens-including-oriole-bird-and-mr-splash",
+     "https://www.thebanner.com/sports/orioles-mlb/orioles-general-manager-search-jon-meoli-4KY43ZJ5I5BWTDXLWDGKVYKTMI/"
+    ]
+   },
+   {
+    "file": "ij_2026-10-06_research.md",
+    "date": "2026-10-06",
+    "heading": "Business-side layoffs \u00b7 GM search still open",
+    "bullets": [
+     "Business-side layoffs (Tue): The Banner and the Sun report cuts in business operations, content production and in-game presentation; the Sun's source says \"around a dozen, if not more.\" The cuts were reportedly not tied to the expected December lockout. Business president Catie Griggs's memo said no further staff changes are expected.",
+     "GM search: There are **no candidate names and no hire**. Elias's search is still open, and earlier targets Kantrovitz and Barfield declined."
+    ],
+    "urls": [
+     "https://www.sportsbusinessjournal.com/Articles/2026/10/06/report-orioles-laying-off-business-operations-staff/",
+     "https://www.thebanner.com/sports/orioles-mlb/orioles-layoffs-business-operations-UPPHD4L6HZBW7FNFRGER7W6GFQ/",
+     "https://roundtable.io/sports/mlb/orioles/news/mike-elias-opens-up-on-changes-coming-to-orioles-front-office"
+    ]
+   },
+   {
+    "file": "ij_2026-10-05_research.md",
+    "date": "2026-10-05",
+    "heading": "Quiet \u00b7 crowded 2027 infield commentary",
+    "bullets": [
+     "Quiet. **No moves and no GM-search names.** Monday coverage was commentary on a crowded 2027 infield: Westburg returning alongside Mayo, Alexander, Encarnaci\u00f3n-Strand and Holliday."
+    ],
+    "urls": [
+     "https://sports.yahoo.com/articles/orioles-news-o-solve-infield-110000174.html"
+    ]
+   },
+   {
+    "file": "ij_2026-10-04_research.md",
+    "date": "2026-10-04",
+    "heading": "No moves \u00b7 FO / defense focus context",
+    "bullets": [
+     "No moves on Oct 4. Context: Elias's Sept 28 end-of-season comments are still being written up (GM search reopened, bigger front office, Mejdal and Blood changes). MLBTR (Oct 3) says defense, especially the outfield, is an offseason focus."
+    ],
+    "urls": [
+     "https://roundtable.io/sports/mlb/orioles/news/mike-elias-opens-up-on-changes-coming-to-orioles-front-office",
+     "https://www.mlbtraderumors.com/2026/10/orioles-aiming-to-improve-defensively-in-2027.html"
+    ]
+   },
+   {
+    "file": "ij_2026-10-01_research.md",
+    "date": "2026-10-01",
+    "heading": "Offseason quiet \u00b7 adjacent AL WC",
+    "bullets": [
+     "Orioles season done **79\u201382**. Yankees swept Red Sox AL Wild Card \u2192 NYY\u2013TB ALDS. No Orioles roster/news delta required beyond offseason quiet."
+    ],
+    "urls": [
+     "https://www.mlb.com/news/yankees-win-al-wild-card-series-2026"
+    ]
+   },
+   {
+    "file": "ij_2026-09-29_research.md",
+    "date": "2026-09-29",
+    "heading": "Season done \u00b7 rainout finale",
+    "bullets": [
+     "Orioles season done **79\u201382** (Sun NYY rainout). AL Wild Card Game 1 BOS @ NYY was adjacent coverage \u2014 not an Orioles game."
+    ],
+    "urls": [
+     "https://www.espn.com/mlb/story/_/id/50045225/rain-forces-cancellation-orioles-yankees-regular-season-finale"
+    ]
+   },
+   {
+    "file": "ij_2026-09-27_research.md",
+    "date": "2026-09-27",
+    "heading": "Finale canceled (rain)",
+    "bullets": [
+     "Canceled (rain). Sustained rain; canceled ~three hours after scheduled 1:05pm ET start; no lineup announced. Yankees finish 93\u201367; host AL Wild Card vs Boston. **Orioles finish 79\u201382** under first-year manager Craig Albernaz. First time since 2002 Yankees didn\u2019t play all 162 in a non-shortened season (Elias via AP/ESPN)."
+    ],
+    "urls": [
+     "https://www.espn.com/mlb/story/_/id/50045225/rain-forces-cancellation-orioles-yankees-regular-season-finale"
+    ]
+   },
+   {
+    "file": "ij_2026-09-25.md",
+    "date": "2026-09-25",
+    "heading": "Eliminated \u00b7 DH G1 at Yankees",
+    "bullets": [
+     "Eliminated Thu. Fri @ Yankees DH \u2014 G1 BAL 10\u20132 (Alonso 2 HR \u2192 AL lead at 43 per AP/CBS; Beavers grand slam; Jackson inside-the-parker; club 79\u201381; Sabathia No. 52 retired pregame). G2 not final at write."
+    ],
+    "urls": [
+     "https://www.cbssports.com/mlb/gametracker/live/MLB_20260925_BAL@NYY/",
+     "https://sny.tv/articles/yankees-orioles-takeaways-game-1-doubleheader-9-25-26"
+    ]
+   }
+  ],
+  "gaps": [
+   "No GM hire name in any on-disk ij_* file through Oct 7 \u2014 search open, interviews ramping, earlier targets Kantrovitz and Barfield declined.",
+   "No confirmed 2027 roster moves, trades, or free-agent signings in on-disk research.",
+   "Layoff headcount differs across days (Sun source \u201caround a dozen\u201d Oct 6 \u2192 Athletic \u201c24+\u201d Oct 7) \u2014 both cited; no official club tally on disk.",
+   "Postseason path is adjacent AL coverage only; Orioles are not in the 2026 MLB postseason (confirmed by Stats API + research).",
+   "No pitching-staff or coaching-staff change list beyond the FO notes above."
+  ],
+  "missing_source_files": []
+ },
+ "remaster": {
+  "label": "Sat Oct 10 afternoon remaster",
+  "aesthetic": "Camden Yards night wall",
+  "port": 4278
+ }
+}

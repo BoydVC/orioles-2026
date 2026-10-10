@@ -1,0 +1,110 @@
+{
+  "label": "Offseason board from on-disk /workspace/ij_* research only — not MLB Stats API. Gaps labeled.",
+  "generated": "2026-10-10T13:36:19-04:00",
+  "generatedNote": "Sat Oct 10, 2026 afternoon remaster. Bullets paraphrased from Interest Journal research files; standings/stats on the wall come only from data/*.json (MLB Stats API, fetched Oct 7).",
+  "sections": [
+    {
+      "file": "ij_2026-10-07_research.md",
+      "date": "2026-10-07",
+      "heading": "Layoffs follow-up · GM search",
+      "bullets": [
+        "Layoffs follow-up: The Athletic (via Camden Chat) puts the business-side cuts at **24+ people**, including the performers behind **the Oriole Bird and Mr. Splash**. Also cut: the team photographer and people in ticket sales, graphic design and food & beverage. No official reason has been given.",
+        "GM search: Interviews are ramping up this week, though **no names yet**. The pool includes up-and-coming player-development leaders from other organizations and at least one candidate with both MLB playing and executive experience. The O's could hire more than one executive. The lockout looms Dec 1."
+      ],
+      "urls": [
+        "https://www.camdenchat.com/orioles-news-links/71261/orioles-news-organization-lays-off-dozens-including-oriole-bird-and-mr-splash",
+        "https://www.thebanner.com/sports/orioles-mlb/orioles-general-manager-search-jon-meoli-4KY43ZJ5I5BWTDXLWDGKVYKTMI/"
+      ]
+    },
+    {
+      "file": "ij_2026-10-06_research.md",
+      "date": "2026-10-06",
+      "heading": "Business-side layoffs · GM search still open",
+      "bullets": [
+        "Business-side layoffs (Tue): The Banner and the Sun report cuts in business operations, content production and in-game presentation; the Sun's source says \"around a dozen, if not more.\" The cuts were reportedly not tied to the expected December lockout. Business president Catie Griggs's memo said no further staff changes are expected.",
+        "GM search: There are **no candidate names and no hire**. Elias's search is still open, and earlier targets Kantrovitz and Barfield declined."
+      ],
+      "urls": [
+        "https://www.sportsbusinessjournal.com/Articles/2026/10/06/report-orioles-laying-off-business-operations-staff/",
+        "https://www.thebanner.com/sports/orioles-mlb/orioles-layoffs-business-operations-UPPHD4L6HZBW7FNFRGER7W6GFQ/",
+        "https://roundtable.io/sports/mlb/orioles/news/mike-elias-opens-up-on-changes-coming-to-orioles-front-office"
+      ]
+    },
+    {
+      "file": "ij_2026-10-05_research.md",
+      "date": "2026-10-05",
+      "heading": "Quiet · crowded 2027 infield commentary",
+      "bullets": [
+        "Quiet. **No moves and no GM-search names.** Monday coverage was commentary on a crowded 2027 infield: Westburg returning alongside Mayo, Alexander, Encarnación-Strand and Holliday."
+      ],
+      "urls": [
+        "https://sports.yahoo.com/articles/orioles-news-o-solve-infield-110000174.html"
+      ]
+    },
+    {
+      "file": "ij_2026-10-04_research.md",
+      "date": "2026-10-04",
+      "heading": "No moves · FO / defense focus context",
+      "bullets": [
+        "No moves on Oct 4. Context: Elias's Sept 28 end-of-season comments are still being written up (GM search reopened, bigger front office, Mejdal and Blood changes). MLBTR (Oct 3) says defense, especially the outfield, is an offseason focus."
+      ],
+      "urls": [
+        "https://roundtable.io/sports/mlb/orioles/news/mike-elias-opens-up-on-changes-coming-to-orioles-front-office",
+        "https://www.mlbtraderumors.com/2026/10/orioles-aiming-to-improve-defensively-in-2027.html"
+      ]
+    },
+    {
+      "file": "ij_2026-10-01_research.md",
+      "date": "2026-10-01",
+      "heading": "Offseason quiet · adjacent AL WC",
+      "bullets": [
+        "Orioles season done **79–82**. Yankees swept Red Sox AL Wild Card → NYY–TB ALDS. No Orioles roster/news delta required beyond offseason quiet."
+      ],
+      "urls": [
+        "https://www.mlb.com/news/yankees-win-al-wild-card-series-2026"
+      ]
+    },
+    {
+      "file": "ij_2026-09-29_research.md",
+      "date": "2026-09-29",
+      "heading": "Season done · rainout finale",
+      "bullets": [
+        "Orioles season done **79–82** (Sun NYY rainout). AL Wild Card Game 1 BOS @ NYY was adjacent coverage — not an Orioles game."
+      ],
+      "urls": [
+        "https://www.espn.com/mlb/story/_/id/50045225/rain-forces-cancellation-orioles-yankees-regular-season-finale"
+      ]
+    },
+    {
+      "file": "ij_2026-09-27_research.md",
+      "date": "2026-09-27",
+      "heading": "Finale canceled (rain)",
+      "bullets": [
+        "Canceled (rain). Sustained rain; canceled ~three hours after scheduled 1:05pm ET start; no lineup announced. Yankees finish 93–67; host AL Wild Card vs Boston. **Orioles finish 79–82** under first-year manager Craig Albernaz. First time since 2002 Yankees didn’t play all 162 in a non-shortened season (Elias via AP/ESPN)."
+      ],
+      "urls": [
+        "https://www.espn.com/mlb/story/_/id/50045225/rain-forces-cancellation-orioles-yankees-regular-season-finale"
+      ]
+    },
+    {
+      "file": "ij_2026-09-25.md",
+      "date": "2026-09-25",
+      "heading": "Eliminated · DH G1 at Yankees",
+      "bullets": [
+        "Eliminated Thu. Fri @ Yankees DH — G1 BAL 10–2 (Alonso 2 HR → AL lead at 43 per AP/CBS; Beavers grand slam; Jackson inside-the-parker; club 79–81; Sabathia No. 52 retired pregame). G2 not final at write."
+      ],
+      "urls": [
+        "https://www.cbssports.com/mlb/gametracker/live/MLB_20260925_BAL@NYY/",
+        "https://sny.tv/articles/yankees-orioles-takeaways-game-1-doubleheader-9-25-26"
+      ]
+    }
+  ],
+  "gaps": [
+    "No GM hire name in any on-disk ij_* file through Oct 7 — search open, interviews ramping, earlier targets Kantrovitz and Barfield declined.",
+    "No confirmed 2027 roster moves, trades, or free-agent signings in on-disk research.",
+    "Layoff headcount differs across days (Sun source “around a dozen” Oct 6 → Athletic “24+” Oct 7) — both cited; no official club tally on disk.",
+    "Postseason path is adjacent AL coverage only; Orioles are not in the 2026 MLB postseason (confirmed by Stats API + research).",
+    "No pitching-staff or coaching-staff change list beyond the FO notes above."
+  ],
+  "missing_source_files": []
+}

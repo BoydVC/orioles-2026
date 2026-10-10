@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Orioles 2026 · Camden Yards Night Wall</title>
+<style>
+@font-face{font-family:"PF";src:local("Georgia"),local("Palatino Linotype");font-weight:400 900}
+@font-face{font-family:"OS";src:local("Arial Narrow"),local("Helvetica Neue");font-weight:200 700}
+:root{
+  --o:#DF4601;--o2:#ff7a33;--ogold:#e8b86d;--ink:#e8e2d6;--muted:#9a9184;
+  --void:#07090f;--panel:#0e1420;--panel2:#121a2a;--line:rgba(232,184,109,.18);
+  --loss:#3a4254;--win:#DF4601;--flood:rgba(255,200,120,.06);
+  --NYY:#7aa2d4;--BOS:#e07070;--TOR:#6a9fff;--TB:#7ec8f0;--BAL:#DF4601;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--void);color:var(--ink);font:15px/1.55 "PF",Georgia,"Iowan Old Style",serif}
+body{min-height:100vh;background-image:
+  radial-gradient(ellipse 90% 50% at 50% -10%,rgba(223,70,1,.18),transparent 55%),
+  radial-gradient(ellipse 40% 30% at 10% 20%,rgba(232,184,109,.07),transparent),
+  radial-gradient(ellipse 40% 30% at 90% 15%,rgba(120,160,255,.05),transparent),
+  linear-gradient(180deg,#05070c 0%,#0a101c 40%,#07090f 100%)}
+.sans{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
+#sky{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.flood{position:absolute;width:42vw;height:42vw;border-radius:50%;filter:blur(60px);opacity:.55}
+.f1{top:-12%;left:8%;background:radial-gradient(circle,rgba(255,180,80,.22),transparent 70%)}
+.f2{top:-8%;right:6%;background:radial-gradient(circle,rgba(223,70,1,.2),transparent 70%)}
+.f3{bottom:10%;left:40%;background:radial-gradient(circle,rgba(100,140,220,.08),transparent 70%)}
+#page{position:relative;z-index:1;max-width:1220px;margin:0 auto;padding:18px 16px 48px}
+.kicker{font:700 11px/1 -apple-system,Segoe UI,Helvetica,Arial,sans-serif;letter-spacing:.28em;text-transform:uppercase;color:var(--o2)}
+h1{font-family:"PF",Georgia,serif;font-size:clamp(32px,5.5vw,58px);line-height:1.02;margin:8px 0 6px;letter-spacing:-.015em;font-weight:700}
+h1 em{color:var(--o);font-style:normal;text-shadow:0 0 28px rgba(223,70,1,.35)}
+.mast{padding:28px 22px 22px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(160deg,rgba(18,26,42,.92),rgba(8,12,20,.95));box-shadow:0 20px 60px -30px rgba(0,0,0,.8),inset 0 1px 0 rgba(255,255,255,.04);position:relative;overflow:hidden}
+.mast:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(118deg,transparent 0 46px,rgba(223,70,1,.05) 46px 92px);pointer-events:none}
+.mast .inner{position:relative}
+.status{display:inline-flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:10px;padding:6px 12px;border:1px solid rgba(232,184,109,.28);border-radius:999px;font:600 12.5px -apple-system,Segoe UI,Helvetica,Arial,sans-serif;background:rgba(0,0,0,.25);color:#ddd}
+.status b{color:var(--ogold)}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.chip{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:10px 13px;min-width:108px;backdrop-filter:blur(4px)}
+.chip .v{font:800 26px/1.05 -apple-system,Segoe UI,Helvetica,Arial,sans-serif;color:#fff}
+.chip .k{font:600 10px -apple-system,Segoe UI,Helvetica,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+.chip.rec .v{font-size:40px;color:var(--o2);text-shadow:0 0 20px rgba(223,70,1,.4)}
+nav.toc{position:sticky;top:0;z-index:5;margin:14px 0;padding:8px 4px;background:rgba(7,9,15,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav.toc .row{display:flex;gap:14px;overflow-x:auto;font:600 12.5px -apple-system,Segoe UI,Helvetica,Arial,sans-serif;white-space:nowrap;padding:2px 6px}
+nav.toc a{color:var(--muted);text-decoration:none}nav.toc a:hover{color:var(--o2)}
+.wall{display:grid;gap:14px;margin:16px 0}
+.wall.two{grid-template-columns:1.35fr 1fr}
+.wall.three{grid-template-columns:repeat(3,1fr)}
+.wall.even{grid-template-columns:1fr 1fr}
+@media (max-width:920px){.wall.two,.wall.three,.wall.even{grid-template-columns:1fr}}
+.panel{background:linear-gradient(165deg,rgba(16,22,36,.96),rgba(10,14,24,.98));border:1px solid var(--line);border-radius:16px;padding:16px 16px 14px;box-shadow:0 12px 40px -24px rgba(0,0,0,.9)}
+.panel h2,.sec-h{font:700 22px/1.15 "PF",Georgia,serif;margin:0 0 4px;display:flex;align-items:baseline;gap:10px;color:#f2ebe0}
+.sec-h .num,.panel h2 .num{font:800 11px -apple-system,Segoe UI,Helvetica,Arial,sans-serif;color:#0a0c12;background:var(--o);border-radius:5px;padding:2px 7px;transform:translateY(-2px);letter-spacing:.04em}
+.sub{color:var(--muted);margin:0 0 12px;font-size:13.5px}
+.cardhead{font:800 11px -apple-system,Segoe UI,Helvetica,Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--ogold);margin-bottom:8px}
+.gap-tag{display:inline-block;font:700 10px -apple-system,Segoe UI,Helvetica,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#0a0c12;background:var(--ogold);border-radius:4px;padding:2px 6px;margin-right:6px}
+.summary{font-size:16.5px;line-height:1.65;color:#ddd4c4}
+.summary:first-letter{float:left;font-size:52px;line-height:.9;padding:4px 8px 0 0;color:var(--o);font-weight:700}
+.months{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.month{cursor:pointer;transition:transform .15s,border-color .15s;border:1px solid rgba(255,255,255,.08)!important}
+.month:hover{transform:translateY(-2px);border-color:rgba(223,70,1,.45)!important}
+.month.sel{outline:2px solid var(--o)}
+.month .nm{font:700 11px -apple-system,Segoe UI,Helvetica,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.month .wl{font:800 28px/1.1 -apple-system,Segoe UI,Helvetica,Arial,sans-serif;color:#fff}
+.month.good .wl{color:var(--o2)}
+.month .rr{font:500 11.5px -apple-system,Segoe UI,Helvetica,Arial,sans-serif;color:var(--muted)}
+.dots{display:flex;flex-wrap:wrap;gap:3px;margin-top:8px}.dots i{width:8px;height:8px;border-radius:50%;background:var(--loss)}.dots i.W{background:var(--o)}
+table{width:100%;border-collapse:collapse;font:13.5px -apple-system,Segoe UI,Helvetica,Arial,sans-serif}
+th,td{padding:6px 7px;border-bottom:1px solid rgba(255,255,255,.06);text-align:right;color:#d8d0c2}th:first-child,td:first-child{text-align:left}
+th{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:700}
+tr.bal td{font-weight:800;color:var(--o2)}
+.sw{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:middle}
+.toggle{display:inline-flex;border:1px solid rgba(255,255,255,.12);border-radius:999px;overflow:hidden;font:600 12px -apple-system,Segoe UI,Helvetica,Arial,sans-serif;margin-bottom:8px}
+.toggle button{border:0;background:transparent;padding:6px 12px;cursor:pointer;color:var(--muted)}.toggle button.on{background:var(--o);color:#fff}
+svg text{font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif}
+.chart{width:100%;height:auto;display:block;touch-action:pan-y}
+.hscroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+@media (max-width:700px){#seasonChart{min-width:780px}#raceChart{min-width:560px}}
+#tip{position:fixed;pointer-events:none;background:#0a0e18;color:#fff;padding:8px 10px;border-radius:8px;border:1px solid rgba(232,184,109,.3);font:12.5px/1.4 -apple-system,Segoe UI,Helvetica,Arial,sans-serif;opacity:0;transition:opacity .1s;z-index:20;max-width:270px;box-shadow:0 10px 28px rgba(0,0,0,.5)}
+#tip b{color:var(--o2)}
+.leader{display:flex;flex-direction:column;min-height:140px}
+.leader .st{font:800 11px -apple-system,Segoe UI,Helvetica,Arial,sans-serif;letter-spacing:.16em;color:var(--o);text-transform:uppercase}
+.leader .who{font-size:17px;font-weight:700;margin:2px 0;color:#fff}
+.leader .val{font:800 32px/1 -apple-system,Segoe UI,Helvetica,Arial,sans-serif;color:var(--ogold)}
+.leader .line{font:12px -apple-system,Segoe UI,Helvetica,Arial,sans-serif;color:var(--muted);margin-top:4px}
+.leader ol{margin:8px 0 0;padding-left:18px;font:13px -apple-system,Segoe UI,Helvetica,Arial,sans-serif;color:#aaa}
+.leader .note{font:11px -apple-system,Segoe UI,Helvetica,Arial,sans-serif;color:var(--muted)}
+.grid{display:grid;gap:12px}
+.g2{grid-template-columns:1.55fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+@media (max-width:900px){.g2,.g3,.g4{grid-template-columns:1fr}}
+.streak{display:flex;align-items:center;gap:14px}
+.streak .n{font:900 52px/1 -apple-system,Segoe UI,Helvetica,Arial,sans-serif;color:#fff}
+.streak.w .n{color:var(--o2)}
+.strip{display:flex;gap:1.5px;margin-top:10px;height:20px}.strip i{flex:1;border-radius:2px;background:#2a3142}.strip i.W{background:var(--o)}.strip i.L{background:#1a1f2c}.strip.has i{opacity:.2}.strip.has i.hl{opacity:1;transform:scaleY(1.3)}
+.game{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px dashed rgba(255,255,255,.08);font:13.5px -apple-system,Segoe UI,Helvetica,Arial,sans-serif}
+.game:last-child{border-bottom:0}
+.score{font-weight:800;font-size:17px}.score.W{color:var(--o2)}.score.L{color:#9aa3b5}
+.tag{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;border-radius:4px;padding:1px 5px;background:rgba(232,184,109,.15);color:var(--ogold);margin-left:6px}
+.small{font-size:12px;color:var(--muted)}
+.legend{display:flex;flex-wrap:wrap;gap:12px;font:12px -apple-system,Segoe UI,Helvetica,Arial,sans-serif;color:#bbb;margin:4px 0 6px}
+.legend span{cursor:pointer;user-select:none}.legend span.off{opacity:.3}
+.research-item{padding:10px 0;border-bottom:1px solid rgba(255,255,255,.06)}
+.research-item:last-child{border-bottom:0}
+.research-item .when{font:700 11px -apple-system,Segoe UI,Helvetica,Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--o2)}
+.research-item .src{font:11px -apple-system,Segoe UI,Helvetica,Arial,sans-serif;color:var(--muted)}
+.research-item ul{margin:6px 0 0;padding-left:18px;color:#d5ccbc;font-size:13.5px}
+.research-item li{margin:4px 0}
+.gap-list{margin:8px 0 0;padding-left:0;list-style:none}
+.gap-list li{margin:8px 0;padding:8px 10px;border-left:3px solid var(--ogold);background:rgba(232,184,109,.06);border-radius:0 8px 8px 0;font:13px -apple-system,Segoe UI,Helvetica,Arial,sans-serif;color:#cfc5b4}
+footer.sources{margin-top:18px;padding:18px 16px;border:1px solid var(--line);border-radius:16px;font:13px -apple-system,Segoe UI,Helvetica,Arial,sans-serif;color:var(--muted);background:rgba(8,10,16,.7)}
+footer.sources a{color:var(--o2);word-break:break-all}
+.yard-bar{height:3px;margin:14px 0 0;border-radius:2px;background:linear-gradient(90deg,transparent,var(--o),var(--ogold),var(--o),transparent);opacity:.7}
+</style>
+</head>
+<body>
+<div id="sky"><div class="flood f1"></div><div class="flood f2"></div><div class="flood f3"></div></div>
+<div id="tip"></div>
+<div id="page">
+<header class="mast"><div class="inner">
+  <div class="kicker">Baltimore Orioles · Camden Yards Night Wall</div>
+  <h1>The <em>2026</em> Season &amp; Offseason</h1>
+  <div class="status" id="status"></div>
+  <div class="chips" id="chips"></div>
+  <div class="yard-bar"></div>
+</div></header>
+
+<nav class="toc"><div class="row">
+  <a href="#offseason">Offseason</a><a href="#summary">Summary</a><a href="#season">Game by game</a><a href="#months">Months</a><a href="#race">AL East</a><a href="#leaders">Leaders</a><a href="#streaks">Streaks</a><a href="#games">Best &amp; worst</a><a href="#gaps">Gaps</a><a href="#sources">Sources</a>
+</div></nav>
+
+<section class="wall two" id="offseason">
+  <div class="panel">
+    <h2><span class="num">0</span>Offseason board</h2>
+    <p class="sub">From on-disk Interest Journal research (<code>ij_*</code>) only — not the Stats API. Each bullet cites its source file. Gaps are listed next door.</p>
+    <div id="researchBoard"></div>
+  </div>
+  <div class="panel" id="gaps">
+    <h2><span class="num">!</span>Labeled gaps</h2>
+    <p class="sub">What this wall does <b>not</b> claim. No invented standings, roster moves, or GM names.</p>
+    <ul class="gap-list" id="gapList"></ul>
+  </div>
+</section>
+
+<section class="panel" id="summary" style="margin:16px 0">
+  <div class="cardhead">The season in one paragraph</div>
+  <p class="summary" id="summaryText"></p>
+  <div class="small" style="margin-top:8px">Every number in this paragraph is computed from the MLB Stats API game log and official stats below. Nothing is typed in by hand.</div>
+</section>
+
+<section class="panel" id="season" style="margin:16px 0">
+  <h2><span class="num">1</span>Game by game</h2>
+  <p class="sub">Each bar is one game’s run differential — orange win, slate loss. The line tracks games over/under .500. Hover or tap a bar for the box line. Click a month card to highlight that month.</p>
+  <div class="toggle" id="seasonToggle"><button data-m="over" class="on">Games vs .500</button><button data-m="rd">Cumulative run diff</button></div>
+  <div class="hscroll"><svg id="seasonChart" class="chart" viewBox="0 0 1140 380"></svg></div>
+</section>
+
+<section id="months" style="margin:16px 0">
+  <div class="panel" style="margin-bottom:12px">
+    <h2><span class="num">2</span>Month by month</h2>
+    <p class="sub">March games folded into April (Baseball-Reference convention). Each dot is one game in order.</p>
+    <div class="months" id="monthGrid"></div>
+  </div>
+  <div class="wall even">
+    <div class="panel"><div class="cardhead">Splits</div><table id="splits"></table></div>
+    <div class="panel"><div class="cardhead">Head-to-head vs AL East</div><table id="h2h"></table>
+    <div class="cardhead" style="margin-top:16px">Highs &amp; lows</div><div id="peaks" class="sans" style="font-size:14px"></div></div>
+  </div>
+</section>
+
+<section id="race" style="margin:16px 0">
+  <h2 class="sec-h" style="margin-bottom:10px"><span class="num">3</span>The AL East race</h2>
+  <div class="wall two">
+    <div class="panel">
+      <p class="sub">Every AL East team’s record, day by day, from each club’s own completed games. Click a team in the legend to show or hide it.</p>
+      <div class="toggle" id="raceToggle"><button data-m="over" class="on">Games over .500</button><button data-m="gb">Games back</button></div>
+      <div class="legend" id="raceLegend"></div>
+      <div class="hscroll"><svg id="raceChart" class="chart" viewBox="0 0 760 400"></svg></div>
+    </div>
+    <div class="panel">
+      <div class="cardhead">Final standings (official)</div><table id="standings"></table>
+      <div class="small" style="margin-top:10px" id="clinchNote"></div>
+      <div class="cardhead" style="margin-top:16px">Team totals</div><table id="teamline"></table>
+    </div>
+  </div>
+</section>
+
+<section id="leaders" style="margin:16px 0">
+  <div class="panel">
+    <h2><span class="num">4</span>Team leaders</h2>
+    <p class="sub">Orioles stats only. Rate stats use the usual qualifiers (3.1 PA or 1 IP per team game).</p>
+    <div class="cardhead">Batting</div><div class="grid g4" id="batLeaders"></div>
+    <div class="cardhead" style="margin-top:18px">Pitching</div><div class="grid g4" id="pitLeaders"></div>
+  </div>
+</section>
+
+<section id="streaks" style="margin:16px 0">
+  <h2 class="sec-h" style="margin-bottom:10px"><span class="num">5</span>Streaks &amp; stretches</h2>
+  <p class="sub" style="margin-bottom:10px">Each strip shows the whole season, one sliver per game, with the streak lit up.</p>
+  <div class="wall even"><div class="panel" id="winStreak"></div><div class="panel" id="loseStreak"></div></div>
+  <div class="wall even" style="margin-top:12px"><div class="panel" id="best20"></div><div class="panel" id="worst20"></div></div>
+</section>
+
+<section id="games" style="margin:16px 0">
+  <h2 class="sec-h" style="margin-bottom:10px"><span class="num">6</span>Best &amp; worst nights</h2>
+  <p class="sub" style="margin-bottom:10px">Ranked by margin of victory or defeat, with runs scored or allowed as the tiebreaker.</p>
+  <div class="wall three">
+    <div class="panel"><div class="cardhead">Biggest wins</div><div id="bestGames"></div></div>
+    <div class="panel"><div class="cardhead">Toughest losses</div><div id="worstGames"></div></div>
+    <div class="panel"><div class="cardhead">Walk-offs, shutouts &amp; marathons</div><div id="misc"></div></div>
+  </div>
+</section>
+
+<footer class="sources" id="sources"></footer>
+</div>
+<script>const S=/*__SEASON_JSON__*/null;</script>
+<script>
+(function(){
+const $=s=>document.querySelector(s), NS="http://www.w3.org/2000/svg";
+const TC={BAL:"#DF4601",NYY:"#7aa2d4",BOS:"#e07070",TOR:"#6a9fff",TB:"#7ec8f0"};
+const R=S.record, log=S.log;
+const fd=s=>{const d=new Date(s+"T12:00:00");return d.toLocaleDateString("en-US",{month:"short",day:"numeric"})};
+const sgn=n=>(n>0?"+":"")+n;
+const el=(tag,attrs,parent)=>{const e=document.createElementNS(NS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);if(parent)parent.appendChild(e);return e};
+const tip=$("#tip");
+function showTip(ev,html){tip.innerHTML=html;tip.style.opacity=1;const x=(ev.touches?ev.touches[0].clientX:ev.clientX),y=(ev.touches?ev.touches[0].clientY:ev.clientY);
+ const w=tip.offsetWidth;tip.style.left=Math.min(window.innerWidth-w-8,Math.max(8,x+14))+"px";tip.style.top=(y+16)+"px"}
+function hideTip(){tip.style.opacity=0}
+const gline=g=>`${fd(g.date)}${g.dh?" (G"+g.gnum+")":""} · ${g.home?"vs":"@"} ${g.opp}`;
+const esc=s=>String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+function mdLite(t){return esc(t).replace(/\*\*(.+?)\*\*/g,"<b>$1<\/b>")}
+
+// ---- hero ----
+const ps=S.postseason;
+$("#status").innerHTML = ps.bal_in_postseason ? `<b>Postseason in progress</b>: the Orioles are still playing` :
+ `<b>Regular season complete</b> · Orioles did not make the postseason` + (ps.ws_complete?"":` · MLB postseason still in progress${ps.current_round?" ("+ps.current_round+")":""}`);
+const chips=[["rec",`${R.w}-${R.l}`,"Final record"],["",R.pct,"Win pct"],["",sgn(R.rd),"Run diff"],["",`${R.rs}/${R.ra}`,"Runs for / against"],
+ ["",`${["","1st","2nd","3rd","4th","5th"][R.div_rank]}`,"AL East · "+R.gb+" GB"],["",R.wc_gb,"GB of last wild card"],["",`${R.pyth_w}-${R.pyth_l}`,"Pythagorean"]];
+$("#chips").innerHTML=chips.map(c=>`<div class="chip ${c[0]}"><div class="v">${c[1]}</div><div class="k">${c[2]}</div></div>`).join("");
+$("#summaryText").textContent=S.summary;
+
+// ---- offseason research ----
+const Res=S.research;
+if(Res && Res.sections){
+  $("#researchBoard").innerHTML=Res.sections.map(sec=>`<div class="research-item">
+    <div class="when">${esc(sec.date||"")} · ${esc(sec.heading||"")}</div>
+    <div class="src">source: ${esc(sec.file)}</div>
+    <ul>${(sec.bullets||[]).map(b=>`<li>${mdLite(b)}</li>`).join("")}</ul>
+  </div>`).join("");
+  $("#gapList").innerHTML=(Res.gaps||[]).map(g=>`<li><span class="gap-tag">Gap</span>${esc(g)}</li>`).join("");
+} else {
+  $("#researchBoard").innerHTML='<div class="small"><span class="gap-tag">Gap</span>No research_notes.json on disk — offseason board empty.</div>';
+  $("#gapList").innerHTML='<li><span class="gap-tag">Gap</span>Research file missing.</li>';
+}
+
+// ---- season chart ----
+let seasonMode="over", selMonth=null;
+function drawSeason(){
+ const svg=$("#seasonChart");svg.innerHTML="";
+ const W=1140,H=380,ml=44,mr=14,mt=20,mb=34, n=log.length, bw=(W-ml-mr)/n;
+ const x=i=>ml+i*bw;
+ const rdMax=Math.max(...log.map(g=>Math.abs(g.rs-g.ra)));
+ const top=mt, mid=mt+(H-mt-mb)*0.58, barH=(H-mt-mb)*0.42-6;
+ let prev=null;log.forEach((g,i)=>{const m=g.date.slice(0,7)==="2026-03"?"2026-04":g.date.slice(0,7);if(m!==prev){
+   const end=log.findIndex((h,j)=>j>i&&(h.date.slice(0,7)==="2026-03"?"2026-04":h.date.slice(0,7))!==m);const e=end<0?n:end;
+   const mi=S.months.findIndex(r=>r.key===m);
+   el("rect",{x:x(i),y:top,width:(e-i)*bw,height:H-mt-mb,fill:(selMonth===m?"rgba(223,70,1,.16)":(mi%2?"rgba(255,255,255,.025)":"transparent"))},svg);
+   const t=el("text",{x:x(i)+4,y:H-12,"font-size":11,fill:"#8a8174","font-weight":700},svg);t.textContent=(S.months[mi].label==="March/April"?"MAR/APR":S.months[mi].label.slice(0,3).toUpperCase());prev=m}});
+ const vals=log.map(g=>seasonMode==="over"?g.w-g.l:g.rd);
+ const vmax=Math.max(4,...vals.map(Math.abs));
+ const ly=v=>top+ (mid-top-10)/2 - v/vmax*((mid-top-10)/2);
+ const y0=ly(0);
+ el("line",{x1:ml,x2:W-mr,y1:y0,y2:y0,stroke:"#4a5568","stroke-dasharray":"3 3"},svg);
+ [-vmax,0,vmax].forEach(v=>{const t=el("text",{x:ml-6,y:ly(Math.round(v))+4,"text-anchor":"end","font-size":11,fill:"#8a8174"},svg);t.textContent=sgn(Math.round(v))});
+ const lab=el("text",{x:ml+4,y:top+12,"font-size":11,fill:"#8a8174","font-weight":700},svg);lab.textContent=seasonMode==="over"?"GAMES OVER/UNDER .500":"CUMULATIVE RUN DIFFERENTIAL";
+ let d="";vals.forEach((v,i)=>{d+=(i?"L":"M")+(x(i)+bw/2).toFixed(1)+" "+ly(v).toFixed(1)});
+ let area=d+`L${(x(n-1)+bw/2).toFixed(1)} ${y0}L${(x(0)+bw/2).toFixed(1)} ${y0}Z`;
+ el("path",{d:area,fill:"rgba(223,70,1,.12)"},svg);
+ el("path",{d,fill:"none",stroke:"#DF4601","stroke-width":2.4,"stroke-linejoin":"round"},svg);
+ el("line",{x1:ml,x2:W-mr,y1:mid+barH/2+4,y2:mid+barH/2+4,stroke:"#3a4254","stroke-width":1},svg);
+ const by0=mid+barH/2+4, bs=(barH/2)/rdMax;
+ const t2=el("text",{x:ml+4,y:mid+4,"font-size":11,fill:"#8a8174","font-weight":700},svg);t2.textContent="RUN DIFFERENTIAL BY GAME";
+ const tl=el("text",{x:ml-6,y:by0-rdMax*bs+8,"text-anchor":"end","font-size":11,fill:"#8a8174"},svg);tl.textContent="+"+rdMax;
+ const tl2=el("text",{x:ml-6,y:by0+rdMax*bs,"text-anchor":"end","font-size":11,fill:"#8a8174"},svg);tl2.textContent="-"+rdMax;
+ const cursor=el("line",{x1:0,x2:0,y1:top,y2:H-mb,stroke:"#e8b86d","stroke-width":1,opacity:0},svg);
+ const dot=el("circle",{r:4.5,fill:"#0a0e18",stroke:"#DF4601","stroke-width":2.5,opacity:0},svg);
+ log.forEach((g,i)=>{const m=g.rs-g.ra,h=Math.max(1.5,Math.abs(m)*bs);
+  el("rect",{x:x(i)+bw*.12,y:m>0?by0-h:by0,width:bw*.76,height:h,fill:g.res==="W"?"#DF4601":"#3a4254",rx:1},svg)});
+ const hit=el("rect",{x:ml,y:top,width:W-ml-mr,height:H-mt-mb,fill:"transparent"},svg);
+ const move=ev=>{const r=svg.getBoundingClientRect();const cx=((ev.touches?ev.touches[0].clientX:ev.clientX)-r.left)*W/r.width;
+  const i=Math.max(0,Math.min(n-1,Math.floor((cx-ml)/bw)));const g=log[i];
+  cursor.setAttribute("x1",x(i)+bw/2);cursor.setAttribute("x2",x(i)+bw/2);cursor.setAttribute("opacity",.45);
+  dot.setAttribute("cx",x(i)+bw/2);dot.setAttribute("cy",ly(vals[i]));dot.setAttribute("opacity",1);
+  showTip(ev,`<b>Game ${g.n}</b> · ${gline(g)}<br>${g.res} ${g.rs}-${g.ra}${g.innings>9?` (${g.innings} inn)`:""}${g.walkoff?" · walk-off":""}${g.short?" · rain-shortened":""}<br>Record ${g.w}-${g.l} · Run diff ${sgn(g.rd)}<br><span style="color:#aaa">${g.venue}</span>`)};
+ hit.addEventListener("mousemove",move);hit.addEventListener("touchstart",move,{passive:true});hit.addEventListener("touchmove",move,{passive:true});
+ hit.addEventListener("mouseleave",()=>{hideTip();cursor.setAttribute("opacity",0);dot.setAttribute("opacity",0)});
+}
+document.querySelectorAll("#seasonToggle button").forEach(b=>b.onclick=()=>{seasonMode=b.dataset.m;document.querySelectorAll("#seasonToggle button").forEach(x=>x.classList.toggle("on",x===b));drawSeason()});
+drawSeason();
+
+// ---- months ----
+$("#monthGrid").innerHTML=S.months.map(m=>`<div class="panel month ${m.w>m.l?"good":""}" data-k="${m.key}"><div class="nm">${m.label}</div><div class="wl">${m.w}-${m.l}</div>
+<div class="rr">${m.rs} RS · ${m.ra} RA · ${sgn(m.rs-m.ra)}</div><div class="dots">${m.results.map(r=>`<i class="${r}" title="${r}"></i>`).join("")}</div></div>`).join("");
+document.querySelectorAll(".month").forEach(c=>c.onclick=()=>{selMonth=selMonth===c.dataset.k?null:c.dataset.k;
+ document.querySelectorAll(".month").forEach(x=>x.classList.toggle("sel",x.dataset.k===selMonth));drawSeason();$("#season").scrollIntoView({behavior:"smooth"})});
+const recRow=(name,r)=>`<tr><td>${name}</td><td>${r.w}-${r.l}</td><td>${r.g?(r.w/r.g).toFixed(3).replace(/^0/,""):"-"}</td><td>${r.rs}</td><td>${r.ra}</td><td>${sgn(r.rs-r.ra)}</td></tr>`;
+const head=`<tr><th></th><th>W-L</th><th>Pct</th><th>RS</th><th>RA</th><th>Diff</th></tr>`;
+$("#splits").innerHTML=head+S.splits.map(s=>recRow(s.name,s)).join("");
+$("#h2h").innerHTML=head+S.h2h.map(s=>recRow(`<span class="sw" style="background:${TC[s.team]}"></span>${s.name}`,s)).join("");
+const P=S.peaks;
+$("#peaks").innerHTML=`<div>▲ <b>Peak:</b> ${P.high.rec} (${sgn(P.high.over)}) on ${fd(P.high.date)}, game ${P.high.n}</div><div>▼ <b>Low:</b> ${P.low.rec} (${P.low.over}) on ${fd(P.low.date)}, game ${P.low.n}</div>`+
+ (P.last_500?`<div>⚖ <b>Last time at .500 or better:</b> ${P.last_500.rec} on ${fd(P.last_500.date)}, game ${P.last_500.n}</div>`:"");
+
+// ---- race ----
+let raceMode="over"; const hidden=new Set();
+const teamsOrder=S.standings.map(t=>t.team);
+$("#raceLegend").innerHTML=teamsOrder.map(t=>`<span data-t="${t}"><i class="sw" style="background:${TC[t]}"></i>${t}</span>`).join("");
+document.querySelectorAll("#raceLegend span").forEach(s=>s.onclick=()=>{const t=s.dataset.t;hidden.has(t)?hidden.delete(t):hidden.add(t);s.classList.toggle("off");drawRace()});
+function drawRace(){
+ const svg=$("#raceChart");svg.innerHTML="";const W=760,H=400,ml=40,mr=46,mt=14,mb=30;
+ const dates=S.race.dates,n=dates.length;const x=i=>ml+i*(W-ml-mr)/(n-1);
+ const series={};teamsOrder.forEach(t=>{series[t]=raceMode==="over"?S.race.series[t].map(p=>p[0]-p[1]):S.race.gb[t]});
+ let all=[];teamsOrder.filter(t=>!hidden.has(t)).forEach(t=>all=all.concat(series[t]));if(!all.length)all=[0,1];
+ let lo=Math.min(...all),hi=Math.max(...all);if(raceMode==="gb"){lo=0}const pad=(hi-lo)*.06+1;lo-=raceMode==="gb"?0:pad;hi+=pad;
+ const y=v=>raceMode==="gb"? mt+(v-lo)/(hi-lo)*(H-mt-mb) : mt+(hi-v)/(hi-lo)*(H-mt-mb);
+ let pm="";dates.forEach((d,i)=>{const m=d.slice(5,7);if(m!==pm&&m!=="03"){el("line",{x1:x(i),x2:x(i),y1:mt,y2:H-mb,stroke:"rgba(255,255,255,.06)"},svg);const t=el("text",{x:x(i)+3,y:H-10,"font-size":11,fill:"#8a8174"},svg);t.textContent=new Date(d+"T12:00").toLocaleDateString("en-US",{month:"short"});pm=m}});
+ const step=raceMode==="gb"?5:10;for(let v=Math.ceil(lo/step)*step;v<=hi;v+=step){el("line",{x1:ml,x2:W-mr,y1:y(v),y2:y(v),stroke:v===0?"#5a6478":"rgba(255,255,255,.04)","stroke-dasharray":v===0?"4 3":""},svg);const t=el("text",{x:ml-6,y:y(v)+4,"text-anchor":"end","font-size":11,fill:"#8a8174"},svg);t.textContent=raceMode==="gb"?v:sgn(v)}
+ teamsOrder.slice().reverse().forEach(t=>{if(hidden.has(t))return;let d="";series[t].forEach((v,i)=>d+=(i?"L":"M")+x(i).toFixed(1)+" "+y(v).toFixed(1));
+  el("path",{d,fill:"none",stroke:TC[t],"stroke-width":t==="BAL"?3.4:1.8,opacity:t==="BAL"?1:.85,"stroke-linejoin":"round"},svg);
+  });
+ const labs=teamsOrder.filter(t=>!hidden.has(t)).map(t=>({t,y:y(series[t][n-1])+4})).sort((a,b)=>a.y-b.y);
+ for(let i=1;i<labs.length;i++)if(labs[i].y-labs[i-1].y<13)labs[i].y=labs[i-1].y+13;
+ labs.forEach(l=>{const tx=el("text",{x:W-mr+5,y:l.y,"font-size":11.5,"font-weight":800,fill:TC[l.t]},svg);tx.textContent=l.t});
+ const cur=el("line",{y1:mt,y2:H-mb,stroke:"#e8b86d",opacity:0},svg);
+ const hit=el("rect",{x:ml,y:mt,width:W-ml-mr,height:H-mt-mb,fill:"transparent"},svg);
+ const move=ev=>{const r=svg.getBoundingClientRect();const cx=((ev.touches?ev.touches[0].clientX:ev.clientX)-r.left)*W/r.width;const i=Math.max(0,Math.min(n-1,Math.round((cx-ml)/((W-ml-mr)/(n-1)))));
+  cur.setAttribute("x1",x(i));cur.setAttribute("x2",x(i));cur.setAttribute("opacity",.35);
+  const rows=teamsOrder.map(t=>({t,p:S.race.series[t][i],gb:S.race.gb[t][i]})).sort((a,b)=>a.gb-b.gb);
+  showTip(ev,`<b>${fd(dates[i])}</b><br>`+rows.map(r=>`<span class="sw" style="background:${TC[r.t]}"></span>${r.t} ${r.p[0]}-${r.p[1]} · ${r.gb===0?"—":r.gb+" GB"}`).join("<br>"))};
+ hit.addEventListener("mousemove",move);hit.addEventListener("touchstart",move,{passive:true});hit.addEventListener("touchmove",move,{passive:true});hit.addEventListener("mouseleave",()=>{hideTip();cur.setAttribute("opacity",0)});
+}
+document.querySelectorAll("#raceToggle button").forEach(b=>b.onclick=()=>{raceMode=b.dataset.m;document.querySelectorAll("#raceToggle button").forEach(x=>x.classList.toggle("on",x===b));drawRace()});
+drawRace();
+$("#standings").innerHTML=`<tr><th>Team</th><th>W</th><th>L</th><th>Pct</th><th>GB</th><th>Diff</th></tr>`+S.standings.map(t=>`<tr class="${t.team==="BAL"?"bal":""}"><td><span class="sw" style="background:${TC[t.team]}"></span>${t.name}${t.clinch?` <sup>${t.clinch}</sup>`:""}</td><td>${t.w}</td><td>${t.l}</td><td>${t.pct}</td><td>${t.gb}</td><td>${sgn(t.rs-t.ra)}</td></tr>`).join("");
+$("#clinchNote").innerHTML=`Clinch marks from MLB: <i>z</i> = division + best record in league, <i>w</i> = wild card. AL postseason clubs: ${S.postseason_teams_al.join(", ")}. The Orioles spent ${S.race.bal_days_tied_or_first} days tied for or in first place (by the race data above).`;
+const T=S.team;
+$("#teamline").innerHTML=`<tr><td>Slash line</td><td>${T.avg}/${T.obp}/${T.slg}</td></tr><tr><td>Home runs · steals</td><td>${T.hr} · ${T.sb}</td></tr><tr><td>Staff ERA · WHIP</td><td>${T.era} · ${T.whip}</td></tr><tr><td>Strikeouts (pitching) · saves</td><td>${T.k} · ${T.sv}</td></tr>`;
+
+// ---- leaders ----
+function leaderCards(arr,kind){return arr.map(c=>{if(!c.list.length)return"";const top=c.list[0];const pl=S.players[top.id]||{};
+ return `<div class="panel leader"><div class="st">${c.stat}</div><div class="who">${top.name}</div><div class="val">${top.val}</div><div class="line">${(kind==="bat"?pl.bat:pl.pit)||""}</div>
+ <ol start="2">${c.list.slice(1).map(p=>`<li>${p.name} · ${p.val}</li>`).join("")}</ol>${c.note?`<div class="note">${c.note}</div>`:""}</div>`}).join("")}
+$("#batLeaders").innerHTML=leaderCards(S.leaders.batting,"bat");$("#pitLeaders").innerHTML=leaderCards(S.leaders.pitching,"pit");
+
+// ---- streaks ----
+const strip=(a,b)=>`<div class="strip has">${log.map((g,i)=>`<i class="${g.res}${i+1>=a&&i+1<=b?" hl":""}" title="G${g.n} ${g.res} ${g.rs}-${g.ra}"></i>`).join("")}</div>`;
+const st=S.streaks;
+const sk=(s,cls,title,others)=>`<div class="cardhead">${title}</div><div class="streak ${cls}"><div class="n">${s.len}</div><div class="sans"><b>${fd(s.from)} – ${fd(s.to)}</b><br>Games ${s.start_n}–${s.end_n} · outscored ${cls==="w"?"opponents":"by opponents"} ${cls==="w"?s.rs+"-"+s.ra:s.ra+"-"+s.rs}</div></div>${strip(s.start_n,s.end_n)}
+<div class="small" style="margin-top:8px">Next longest: ${others.map(o=>`${o.len} (${fd(o.from)}–${fd(o.to)})`).join(", ")}</div>`;
+$("#winStreak").innerHTML=sk(st.win[0],"w","Longest winning streak",st.win.slice(1));
+$("#loseStreak").innerHTML=sk(st.lose[0],"l","Longest losing streak",st.lose.slice(1));
+const stc=(s,title)=>`<div class="cardhead">${title}</div><div class="streak ${s.w>s.l?"w":""}"><div class="n">${s.w}-${s.l}</div><div class="sans"><b>${fd(s.from)} – ${fd(s.to)}</b><br>Games ${s.start_n}–${s.start_n+s.n-1}</div></div>${strip(s.start_n,s.start_n+s.n-1)}`;
+$("#best20").innerHTML=stc(st.best20,"Best 20-game stretch");$("#worst20").innerHTML=stc(st.worst20,"Worst 20-game stretch");
+
+// ---- games ----
+const grow=g=>`<div class="game"><div><b>${fd(g.date)}</b> ${g.home?"vs":"@"} ${g.opp}${g.innings>9?`<span class="tag">${g.innings} inn</span>`:""}${g.walkoff?`<span class="tag">walk-off</span>`:""}<br><span class="small">${g.venue}</span></div><div class="score ${g.res}">${g.res} ${g.rs}-${g.ra}</div></div>`;
+$("#bestGames").innerHTML=S.games.best.map(grow).join("");$("#worstGames").innerHTML=S.games.worst.map(grow).join("");
+const G=S.games;
+$("#misc").innerHTML=`<div class="sans" style="font-size:14px;margin-bottom:6px"><b>${G.walkoffs.length}</b> walk-off wins · <b>${G.shutouts_for.length}</b> shutouts thrown · <b>${G.shutouts_against.length}</b> times shut out</div>
+<div class="cardhead" style="margin-top:10px">Most runs in a game${G.most_runs.length>1?` (${G.most_runs[0].rs}, ${G.most_runs.length} times)`:""}</div>${G.most_runs.map(grow).join("")}
+<div class="cardhead" style="margin-top:10px">Longest game</div>${grow(G.longest)}
+<div class="cardhead" style="margin-top:10px">Walk-offs</div>${G.walkoffs.map(grow).join("")||'<div class="small">None</div>'}`;
+
+// ---- footer ----
+const M=S.meta;const fa=new Date(M.fetched_at);
+$("#sources").innerHTML=`<b>Sources.</b> Standings &amp; stats: public MLB Stats API (statsapi.mlb.com), team id 110, fetched ${fa.toLocaleString("en-US",{timeZone:"America/New_York",dateStyle:"medium",timeStyle:"short"})} ET (${M.fetched_at}). Offseason board: on-disk <code>/workspace/ij_*</code> research only${Res?` (${Res.sections.length} sections)`:""}.<br>
+${M.sources.map(s=>`· ${s.name}: <a href="${s.url}">${s.url}</a>`).join("<br>")}<br><br>
+<b>Notes.</b> The log has ${R.g} completed regular-season games; totals (${R.w}-${R.l}, ${R.rs} RS / ${R.ra} RA) match MLB official standings (${S.official.w}-${S.official.l}, ${S.official.rs}/${S.official.ra}).
+${(()=>{const pp=S.not_played.filter(g=>g.state==="Postponed"),cc=S.not_played.filter(g=>g.state!=="Postponed");
+ return (pp.length?` Postponed and made up later: ${pp.map(g=>`${fd(g.date)} (${g.opp}${g.reason?", "+g.reason.toLowerCase():""})`).join(", ")}. `:"")+
+ (cc.length?` ${cc.map(g=>`${fd(g.date)} ${g.home?"vs":"at"} ${g.opp}: ${g.state.toLowerCase()}${g.reason?" ("+g.reason.toLowerCase()+")":""} and never played`).join("; ")}, so the season ran ${R.g} games, not 162.`:"")})()}
+${log.filter(g=>g.short).map(g=>` Rain-shortened: ${fd(g.date)} ${g.home?"vs":"@"} ${g.opp}, ${g.res} ${g.rs}-${g.ra} after ${g.innings} innings.`).join("")}
+ Walk-off = Orioles won at home and batted in the final inning. Pythagorean exponent 1.83. Race chart = each team's own completed games by date.<br>
+<b>Remaster.</b> Sat Oct 10, 2026 afternoon — Camden Yards night wall for Boyd / TokenMax. No invented baseball facts.`;
+})();
+</script>
+</body></html>

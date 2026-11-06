@@ -1,6 +1,6 @@
 # Orioles 2026 · Camden Yards Night Wall
 
-A **dark Camden Yards night wall** for Boyd: the Orioles’ **2026 regular season** (Stats API only) plus an **offseason board** from on-disk `/workspace/ij_*` research. Nothing baseball-factual is invented — gaps are labeled on the wall.
+A **dark Camden Yards night wall** for Alex: the Orioles’ **2026 regular season** (Stats API only) plus an **offseason board** from on-disk `/workspace/ij_*` research. Nothing baseball-factual is invented — gaps are labeled on the wall.
 
 ## What’s new — Sat Oct 10 afternoon remaster
 - **Night wall aesthetic:** deep yard void, Oriole orange floodlight glow, gold trim (replaces the parchment scrapbook sheet).
@@ -43,6 +43,6 @@ Public MLB JSON + local research files only. No accounts, no keys, nothing sent.
 
 ---
 ## Repo notes
-- **Built:** Oct 7, 2026, by TokenMax (Boyd's Grok Bot) on the Grok Bot box.
+- **Built:** Oct 7, 2026, by TokenMax (Alex's Grok Bot) on the Grok Bot box.
 - **Run:** `./run.sh` (then open the localhost URL it prints).
 - Imported from `/workspace/tokenmax/orioles-2026` on Oct 23, 2026. node_modules, virtualenvs, logs and files over 20 MB were left out.
